@@ -502,15 +502,6 @@
 		(uuid "5e579ca0-1f74-4bee-94e4-95d0153092ce")
 	)
 	(bus_entry
-		(at 243.84 81.28)
-		(size 2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9be617f9-6635-49b8-b2b8-067153d58e17")
-	)
-	(bus_entry
 		(at 152.4 130.81)
 		(size -2.54 -2.54)
 		(stroke

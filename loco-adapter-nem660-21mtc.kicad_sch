@@ -834,9 +834,9 @@
 		)
 		(symbol "power:GND"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -910,8 +910,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
-					(name "GND"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -984,8 +984,48 @@
 		(uuid "8e568b8c-282f-4332-ae56-7cc4d7bb1dcc")
 	)
 	(no_connect
+		(at 26.67 80.01)
+		(uuid "04e67a1a-b5a7-4e96-adf4-1faf761ba89b")
+	)
+	(no_connect
+		(at 26.67 100.33)
+		(uuid "4c45eeee-2545-4c72-9077-8f2055fb9cba")
+	)
+	(no_connect
+		(at 26.67 85.09)
+		(uuid "6ed881a4-3a06-4a1a-a823-8d8d4526a3c1")
+	)
+	(no_connect
 		(at 53.34 105.41)
 		(uuid "73c7000c-e689-44ca-bafc-9f30e183afbf")
+	)
+	(no_connect
+		(at 26.67 102.87)
+		(uuid "77893651-a07d-4b80-8ecf-8d2a04011cd7")
+	)
+	(no_connect
+		(at 26.67 87.63)
+		(uuid "81990570-d99a-49bc-8eab-8dfadcbdaac6")
+	)
+	(no_connect
+		(at 91.44 92.71)
+		(uuid "9caf66d6-df47-418c-9bc3-415913fbca21")
+	)
+	(no_connect
+		(at 91.44 97.79)
+		(uuid "ac08c24b-02c4-4d48-86e9-e039dbd6b333")
+	)
+	(no_connect
+		(at 91.44 102.87)
+		(uuid "c791a00a-d343-4125-8957-1834b2014f75")
+	)
+	(no_connect
+		(at 91.44 100.33)
+		(uuid "cb628b85-7fde-4f2f-bc74-cd52bb65ee2c")
+	)
+	(no_connect
+		(at 26.67 82.55)
+		(uuid "fa3e9d91-9bb4-4bed-be2c-5e40217c41f5")
 	)
 	(wire
 		(pts
@@ -1039,6 +1079,16 @@
 	)
 	(wire
 		(pts
+			(xy 66.04 97.79) (xy 91.44 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ee67deb-3c97-413f-91d3-3423ebee7383")
+	)
+	(wire
+		(pts
 			(xy 76.2 95.25) (xy 96.52 95.25)
 		)
 		(stroke
@@ -1079,16 +1129,6 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 97.79) (xy 88.9 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5a3779cc-d18c-4779-9e97-a786891131cf")
-	)
-	(wire
-		(pts
 			(xy 96.52 77.47) (xy 96.52 95.25)
 		)
 		(stroke
@@ -1099,7 +1139,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 92.71) (xy 83.82 92.71)
+			(xy 66.04 92.71) (xy 91.44 92.71)
 		)
 		(stroke
 			(width 0)
@@ -1149,7 +1189,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 102.87) (xy 88.9 102.87)
+			(xy 66.04 102.87) (xy 91.44 102.87)
 		)
 		(stroke
 			(width 0)
@@ -1249,16 +1289,6 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 100.33) (xy 88.9 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b1ca50a2-0434-4dc6-983d-a7d46a01af39")
-	)
-	(wire
-		(pts
 			(xy 26.67 87.63) (xy 53.34 87.63)
 		)
 		(stroke
@@ -1289,6 +1319,16 @@
 	)
 	(wire
 		(pts
+			(xy 66.04 100.33) (xy 91.44 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d92df633-69e0-4312-bb5b-57c8bcacae70")
+	)
+	(wire
+		(pts
 			(xy 102.87 85.09) (xy 107.95 85.09)
 		)
 		(stroke
@@ -1299,7 +1339,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 82.55) (xy 83.82 82.55)
+			(xy 76.2 82.55) (xy 91.44 82.55)
 		)
 		(stroke
 			(width 0)
@@ -1339,7 +1379,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 80.01) (xy 83.82 80.01)
+			(xy 76.2 80.01) (xy 91.44 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1643,7 +1683,7 @@
 		(uuid "f3ffc6fd-aff6-4754-ac9e-9f38d6981046")
 	)
 	(label "DCC0"
-		(at 83.82 82.55 180)
+		(at 91.44 82.55 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1703,7 +1743,7 @@
 		(uuid "41da2bb9-ccb3-48bc-9d42-5040b23ed110")
 	)
 	(label "AMP_AUX2"
-		(at 88.9 100.33 180)
+		(at 91.44 100.33 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1733,7 +1773,7 @@
 		(uuid "6656caf4-d4f9-4c4f-b0e4-5c2429692d38")
 	)
 	(label "AMP_AUX1"
-		(at 88.9 97.79 180)
+		(at 91.44 97.79 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1763,7 +1803,7 @@
 		(uuid "b1d5e19d-47a0-4190-ac98-4f5d1b81aee7")
 	)
 	(label "DCC1"
-		(at 83.82 80.01 180)
+		(at 91.44 80.01 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1773,7 +1813,7 @@
 		(uuid "b49a9101-3d32-4b18-953f-73523b7edab8")
 	)
 	(label "AUX5"
-		(at 83.82 92.71 180)
+		(at 91.44 92.71 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1783,7 +1823,7 @@
 		(uuid "bc255b90-7c75-4c23-adf6-8c62ff79a5d7")
 	)
 	(label "AMP_AUX3"
-		(at 88.9 102.87 180)
+		(at 91.44 102.87 180)
 		(effects
 			(font
 				(size 1.27 1.27)
