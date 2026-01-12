@@ -122,6 +122,10 @@ outputs:
     dir: 'grbr'
     options:
       use_protel_extensions: true
+      # Unterdrückt die Referenzbezeichner (z.B. U101, R5)
+      plot_footprint_refs: false
+      # Optional: Unterdrückt auch die Werte (z.B. 10k, 100nF), falls gewünscht
+      plot_footprint_values: false      
 
   - name: 'Bohr_Dateien'
     comment: 'Erzeugt Excellon-Bohrdateien'
