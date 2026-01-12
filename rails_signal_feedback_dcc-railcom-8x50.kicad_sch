@@ -753,6 +753,24 @@
 		(color 0 0 0 0)
 		(uuid "e03f9ff1-439c-4aec-a343-46170a603316")
 	)
+	(bus_entry
+		(at 68.58 113.03)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93a58cb0-661f-4a8a-b7a7-f8e9d6516521")
+	)
+	(bus_entry
+		(at 68.58 93.98)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c921785e-f201-42fb-beb6-cd43b24e9738")
+	)
 	(wire
 		(pts
 			(xy 104.14 53.34) (xy 104.14 55.88)
@@ -803,16 +821,6 @@
 		)
 		(uuid "10756a4b-0cde-455e-a4fb-9f9856f84ebc")
 	)
-	(bus
-		(pts
-			(xy 67.31 38.1) (xy 78.74 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1c6b7143-6c90-4b52-b1b8-f25b8731f408")
-	)
 	(wire
 		(pts
 			(xy 69.85 67.31) (xy 45.72 67.31)
@@ -822,6 +830,16 @@
 			(type default)
 		)
 		(uuid "1c9c5692-f584-4323-9ddd-7430974807bd")
+	)
+	(bus
+		(pts
+			(xy 55.88 88.9) (xy 68.58 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21abecee-6393-40d5-8634-5c63412adc8c")
 	)
 	(wire
 		(pts
@@ -835,7 +853,7 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 115.57) (xy 71.12 115.57)
+			(xy 71.12 115.57) (xy 96.52 115.57)
 		)
 		(stroke
 			(width 0)
@@ -993,6 +1011,16 @@
 		)
 		(uuid "a55d065e-68fa-4ec2-a9b1-baea70edea71")
 	)
+	(bus
+		(pts
+			(xy 68.58 88.9) (xy 68.58 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7eb0d80-c554-4aa2-aec0-12d52c8dbdc8")
+	)
 	(wire
 		(pts
 			(xy 71.12 96.52) (xy 96.52 96.52)
@@ -1032,6 +1060,16 @@
 			(type default)
 		)
 		(uuid "c7c225d5-13a7-42ed-8fef-fec78efc480b")
+	)
+	(bus
+		(pts
+			(xy 68.58 113.03) (xy 68.58 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d10d46e4-115e-4a24-98ab-51aa5250f2ed")
 	)
 	(wire
 		(pts
@@ -1154,7 +1192,7 @@
 		(uuid "7c78d186-b3f4-4d52-b44c-63d0bc9735bd")
 	)
 	(label "DCC[0..1]"
-		(at 78.74 38.1 180)
+		(at 68.58 88.9 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1195,7 +1233,7 @@
 	)
 	(hierarchical_label "DCC[0..1]"
 		(shape bidirectional)
-		(at 67.31 38.1 180)
+		(at 55.88 88.9 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1426,10 +1464,6 @@
 					(reference "Q101")
 					(unit 1)
 				)
-				(path "/6d7aefd8-fcb8-4935-b99c-c7045c3b702f/2444bbf9-5682-4e11-b667-350d7de8ca4f"
-					(reference "Q101")
-					(unit 1)
-				)
 			)
 			(project "xDuinoRail-Arduino-RailcomDetect-Dev"
 				(path "/81b33966-136c-4d5d-8e55-9dddbbd3dbe5/2e760e4f-382c-4bbb-b931-2c889ce9fb97"
@@ -1635,10 +1669,6 @@
 					(reference "Q104")
 					(unit 1)
 				)
-				(path "/6d7aefd8-fcb8-4935-b99c-c7045c3b702f/2444bbf9-5682-4e11-b667-350d7de8ca4f"
-					(reference "Q104")
-					(unit 1)
-				)
 			)
 			(project "xDuinoRail-Arduino-RailcomDetect-Dev"
 				(path "/81b33966-136c-4d5d-8e55-9dddbbd3dbe5/2e760e4f-382c-4bbb-b931-2c889ce9fb97"
@@ -1808,10 +1838,6 @@
 		(instances
 			(project "rails_signal_feedback_dcc-railcom-8x50"
 				(path "/6d7aefd8-fcb8-4935-b99c-c7045c3b702f"
-					(reference "R102")
-					(unit 1)
-				)
-				(path "/6d7aefd8-fcb8-4935-b99c-c7045c3b702f/2444bbf9-5682-4e11-b667-350d7de8ca4f"
 					(reference "R102")
 					(unit 1)
 				)
@@ -2020,10 +2046,6 @@
 					(reference "Q102")
 					(unit 1)
 				)
-				(path "/6d7aefd8-fcb8-4935-b99c-c7045c3b702f/2444bbf9-5682-4e11-b667-350d7de8ca4f"
-					(reference "Q102")
-					(unit 1)
-				)
 			)
 			(project "xDuinoRail-Arduino-RailcomDetect-Dev"
 				(path "/81b33966-136c-4d5d-8e55-9dddbbd3dbe5/2e760e4f-382c-4bbb-b931-2c889ce9fb97"
@@ -2208,10 +2230,6 @@
 		(instances
 			(project "rails_signal_feedback_dcc-railcom-8x50"
 				(path "/6d7aefd8-fcb8-4935-b99c-c7045c3b702f"
-					(reference "R101")
-					(unit 1)
-				)
-				(path "/6d7aefd8-fcb8-4935-b99c-c7045c3b702f/2444bbf9-5682-4e11-b667-350d7de8ca4f"
 					(reference "R101")
 					(unit 1)
 				)
@@ -2420,10 +2438,6 @@
 					(reference "Q103")
 					(unit 1)
 				)
-				(path "/6d7aefd8-fcb8-4935-b99c-c7045c3b702f/2444bbf9-5682-4e11-b667-350d7de8ca4f"
-					(reference "Q103")
-					(unit 1)
-				)
 			)
 			(project "xDuinoRail-Arduino-RailcomDetect-Dev"
 				(path "/81b33966-136c-4d5d-8e55-9dddbbd3dbe5/2e760e4f-382c-4bbb-b931-2c889ce9fb97"
@@ -2611,10 +2625,6 @@
 					(reference "R104")
 					(unit 1)
 				)
-				(path "/6d7aefd8-fcb8-4935-b99c-c7045c3b702f/2444bbf9-5682-4e11-b667-350d7de8ca4f"
-					(reference "R104")
-					(unit 1)
-				)
 			)
 			(project "xDuinoRail-Arduino-RailcomDetect-Dev"
 				(path "/81b33966-136c-4d5d-8e55-9dddbbd3dbe5/2e760e4f-382c-4bbb-b931-2c889ce9fb97"
@@ -2783,10 +2793,6 @@
 		(instances
 			(project "rails_signal_feedback_dcc-railcom-8x50"
 				(path "/6d7aefd8-fcb8-4935-b99c-c7045c3b702f"
-					(reference "R103")
-					(unit 1)
-				)
-				(path "/6d7aefd8-fcb8-4935-b99c-c7045c3b702f/2444bbf9-5682-4e11-b667-350d7de8ca4f"
 					(reference "R103")
 					(unit 1)
 				)
@@ -2970,10 +2976,6 @@
 		(instances
 			(project "rails_signal_feedback_dcc-railcom-8x50"
 				(path "/6d7aefd8-fcb8-4935-b99c-c7045c3b702f"
-					(reference "D101")
-					(unit 1)
-				)
-				(path "/6d7aefd8-fcb8-4935-b99c-c7045c3b702f/2444bbf9-5682-4e11-b667-350d7de8ca4f"
 					(reference "D101")
 					(unit 1)
 				)
