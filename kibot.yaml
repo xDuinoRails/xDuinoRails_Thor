@@ -75,7 +75,7 @@ outputs:
     type: pcbdraw
     dir: 'Power_Check'
     options:
-      format: PDF
+      format: pdf
       # PcbDraw nutzt 'highlight' (Liste von Netzen), um diese farblich zu markieren
       highlight: ['U+']
       # Zeige keine Komponenten, um den Fokus auf die Leiterbahnen zu legen (optional anpassbar)
@@ -89,7 +89,7 @@ outputs:
     type: pcbdraw
     dir: 'Power_Check'
     options:
-      format: PDF
+      format: pdf
       highlight: ['GND']
       show_components: none
       output: '%f-GND.%x'
