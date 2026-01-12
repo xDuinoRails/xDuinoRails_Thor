@@ -147,10 +147,8 @@ outputs:
           name: 'Value'
         - field: 'Footprint'
           name: 'Package'
-        - field: 'LCSC'
-          name: 'LCSC Part #'
-        - field: 'Quantity'
-          name: 'Quantity'
+        - field: 'OLI_ID'
+          name: 'Olis ID #'
 
   - name: 'position_files'
     comment: 'Positionsdateien für die Bestückung (Pick & Place)'
