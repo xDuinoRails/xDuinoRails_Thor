@@ -1933,7 +1933,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3c10b6b0-2da0-43b2-9c0c-2af2f0fbc7a2")
-		(property "Reference" "TP804"
+		(property "Reference" "TP403"
 			(at 74.93 86.3599 0)
 			(effects
 				(font
@@ -1984,7 +1984,7 @@
 		(instances
 			(project "xDuinoRails-Thor-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/3c699e35-5808-46af-b922-4c3eb1f6da5c"
-					(reference "TP804")
+					(reference "TP403")
 					(unit 1)
 				)
 			)
@@ -1999,7 +1999,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "446fecc4-26d7-4b40-89dc-0a63bf0d337e")
-		(property "Reference" "TP808"
+		(property "Reference" "TP406"
 			(at 41.91 96.5199 0)
 			(effects
 				(font
@@ -2050,7 +2050,7 @@
 		(instances
 			(project "xDuinoRails-Thor-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/3c699e35-5808-46af-b922-4c3eb1f6da5c"
-					(reference "TP808")
+					(reference "TP406")
 					(unit 1)
 				)
 			)
@@ -2066,7 +2066,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4e1a0e88-3e33-482d-bf9e-a8e2d8d75900")
-		(property "Reference" "TP807"
+		(property "Reference" "TP407"
 			(at 74.93 93.9799 0)
 			(effects
 				(font
@@ -2117,7 +2117,7 @@
 		(instances
 			(project "xDuinoRails-Thor-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/3c699e35-5808-46af-b922-4c3eb1f6da5c"
-					(reference "TP807")
+					(reference "TP407")
 					(unit 1)
 				)
 			)
@@ -2133,7 +2133,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "502b6e19-8b9f-4639-9574-c6faad769659")
-		(property "Reference" "TP803"
+		(property "Reference" "TP701"
 			(at 74.93 83.8199 0)
 			(effects
 				(font
@@ -2184,7 +2184,7 @@
 		(instances
 			(project "xDuinoRails-Thor-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/3c699e35-5808-46af-b922-4c3eb1f6da5c"
-					(reference "TP803")
+					(reference "TP701")
 					(unit 1)
 				)
 			)
@@ -2200,7 +2200,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5f799170-644c-4c86-8f90-8305ac64e350")
-		(property "Reference" "TP802"
+		(property "Reference" "TP402"
 			(at 74.93 81.2799 0)
 			(effects
 				(font
@@ -2251,7 +2251,7 @@
 		(instances
 			(project "xDuinoRails-Thor-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/3c699e35-5808-46af-b922-4c3eb1f6da5c"
-					(reference "TP802")
+					(reference "TP402")
 					(unit 1)
 				)
 			)
@@ -2267,7 +2267,7 @@
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "6dab23ea-d8b7-4526-8651-efc2326ecf0e")
-		(property "Reference" "J801"
+		(property "Reference" "J701"
 			(at 59.69 73.66 0)
 			(effects
 				(font
@@ -2379,7 +2379,7 @@
 		(instances
 			(project ""
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/3c699e35-5808-46af-b922-4c3eb1f6da5c"
-					(reference "J801")
+					(reference "J701")
 					(unit 1)
 				)
 			)
@@ -2395,7 +2395,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "86de59c6-2b97-4db2-8864-b155951033ce")
-		(property "Reference" "TP805"
+		(property "Reference" "TP404"
 			(at 74.93 88.8999 0)
 			(effects
 				(font
@@ -2446,7 +2446,7 @@
 		(instances
 			(project "xDuinoRails-Thor-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/3c699e35-5808-46af-b922-4c3eb1f6da5c"
-					(reference "TP805")
+					(reference "TP404")
 					(unit 1)
 				)
 			)
@@ -2461,7 +2461,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "95432ff5-d5e9-4b23-a234-1a9710395412")
-		(property "Reference" "TP806"
+		(property "Reference" "TP405"
 			(at 41.91 93.9799 0)
 			(effects
 				(font
@@ -2512,7 +2512,7 @@
 		(instances
 			(project "xDuinoRails-Thor-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/3c699e35-5808-46af-b922-4c3eb1f6da5c"
-					(reference "TP806")
+					(reference "TP405")
 					(unit 1)
 				)
 			)
@@ -2528,7 +2528,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c480b0b1-3e47-4bca-ac02-d5e6472f9ebd")
-		(property "Reference" "TP801"
+		(property "Reference" "TP401"
 			(at 74.93 78.7399 0)
 			(effects
 				(font
@@ -2579,7 +2579,7 @@
 		(instances
 			(project "xDuinoRails-Thor-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/3c699e35-5808-46af-b922-4c3eb1f6da5c"
-					(reference "TP801")
+					(reference "TP401")
 					(unit 1)
 				)
 			)
@@ -2657,7 +2657,7 @@
 			)
 			(project "loco-adapter-nem660-21mtc"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/3c699e35-5808-46af-b922-4c3eb1f6da5c"
-					(reference "#PWR801")
+					(reference "#PWR701")
 					(unit 1)
 				)
 			)

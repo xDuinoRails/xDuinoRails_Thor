@@ -887,7 +887,7 @@
 			)
 			(project "rails_power_dc-dc-ldo-3v3_100mA-test"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/a3f567b3-edcb-4aa0-8471-532dbe641db4"
-					(reference "C303")
+					(reference "C203")
 					(unit 1)
 				)
 			)
@@ -1099,7 +1099,7 @@
 			)
 			(project "rails_power_dc-dc-ldo-3v3_100mA-test"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/a3f567b3-edcb-4aa0-8471-532dbe641db4"
-					(reference "C301")
+					(reference "C201")
 					(unit 1)
 				)
 			)
@@ -1249,7 +1249,7 @@
 			)
 			(project "rails_power_dc-dc-ldo-3v3_100mA-test"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/a3f567b3-edcb-4aa0-8471-532dbe641db4"
-					(reference "U301")
+					(reference "U201")
 					(unit 1)
 				)
 			)
@@ -1442,7 +1442,7 @@
 			)
 			(project "rails_power_dc-dc-ldo-3v3_100mA-test"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/a3f567b3-edcb-4aa0-8471-532dbe641db4"
-					(reference "C302")
+					(reference "C202")
 					(unit 1)
 				)
 			)

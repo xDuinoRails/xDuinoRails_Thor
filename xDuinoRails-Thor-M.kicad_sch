@@ -1375,7 +1375,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "13e303d4-236f-4308-977d-04a27c8cc29e")
-		(property "Reference" "#PWR105"
+		(property "Reference" "#PWR1105"
 			(at 237.49 129.54 0)
 			(effects
 				(font
@@ -1426,7 +1426,7 @@
 		(instances
 			(project "xDuinoRails-Thor-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a"
-					(reference "#PWR105")
+					(reference "#PWR1105")
 					(unit 1)
 				)
 			)
@@ -1442,7 +1442,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1a0e9ab2-fa62-4d6e-8cb6-5a4035443c40")
-		(property "Reference" "#PWR108"
+		(property "Reference" "#PWR1108"
 			(at 171.45 149.86 0)
 			(effects
 				(font
@@ -1493,7 +1493,7 @@
 		(instances
 			(project "xDuinoRails-Thor-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a"
-					(reference "#PWR108")
+					(reference "#PWR1108")
 					(unit 1)
 				)
 			)
@@ -1509,7 +1509,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "509b5f66-93e4-4eaf-a158-79120bec858d")
-		(property "Reference" "#PWR104"
+		(property "Reference" "#PWR1104"
 			(at 163.83 116.84 0)
 			(effects
 				(font
@@ -1560,7 +1560,7 @@
 		(instances
 			(project "xDuinoRails-Thor-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a"
-					(reference "#PWR104")
+					(reference "#PWR1104")
 					(unit 1)
 				)
 			)
@@ -1577,7 +1577,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7e6d9cc1-bb40-4ca0-bf24-c9bd0648e557")
-		(property "Reference" "#PWR102"
+		(property "Reference" "#PWR1102"
 			(at 44.45 72.39 0)
 			(effects
 				(font
@@ -1628,7 +1628,7 @@
 		(instances
 			(project "xDuinoRails-Hermes-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a"
-					(reference "#PWR102")
+					(reference "#PWR1102")
 					(unit 1)
 				)
 			)
@@ -1644,7 +1644,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9c8701bd-b444-4e0b-acd0-68f23d667d40")
-		(property "Reference" "#PWR103"
+		(property "Reference" "#PWR1103"
 			(at 144.78 72.39 0)
 			(effects
 				(font
@@ -1695,7 +1695,7 @@
 		(instances
 			(project "xDuinoRails-Hermes-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a"
-					(reference "#PWR103")
+					(reference "#PWR1103")
 					(unit 1)
 				)
 			)
@@ -1712,7 +1712,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a3c57770-4f50-444d-8452-31f292b6a69c")
-		(property "Reference" "#PWR106"
+		(property "Reference" "#PWR1106"
 			(at 39.37 130.81 0)
 			(effects
 				(font
@@ -1763,7 +1763,7 @@
 		(instances
 			(project "xDuinoRails-Hermes-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a"
-					(reference "#PWR106")
+					(reference "#PWR1106")
 					(unit 1)
 				)
 			)
@@ -1779,7 +1779,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a714b67e-6343-406c-b07a-077cabed7d2e")
-		(property "Reference" "#PWR101"
+		(property "Reference" "#PWR1101"
 			(at 100.33 71.12 0)
 			(effects
 				(font
@@ -1830,7 +1830,7 @@
 		(instances
 			(project "xDuinoRails-Thor-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a"
-					(reference "#PWR101")
+					(reference "#PWR1101")
 					(unit 1)
 				)
 			)
@@ -1846,7 +1846,7 @@
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "d4a4bea9-a7bc-48c0-9b24-f935a6aad4b2")
-		(property "Reference" "U101"
+		(property "Reference" "U1101"
 			(at 102.87 93.98 0)
 			(effects
 				(font
@@ -1934,7 +1934,7 @@
 		(instances
 			(project ""
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a"
-					(reference "U101")
+					(reference "U1101")
 					(unit 1)
 				)
 			)
@@ -1950,7 +1950,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f67cf160-2d01-449c-912a-3921a31b95ed")
-		(property "Reference" "#PWR107"
+		(property "Reference" "#PWR1107"
 			(at 130.81 130.81 0)
 			(effects
 				(font
@@ -2001,7 +2001,7 @@
 		(instances
 			(project "xDuinoRails-Hermes-S"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a"
-					(reference "#PWR107")
+					(reference "#PWR1107")
 					(unit 1)
 				)
 			)
@@ -2646,11 +2646,6 @@
 					(page "10")
 				)
 			)
-		)
-	)
-	(sheet_instances
-		(path "/"
-			(page "1")
 		)
 	)
 )

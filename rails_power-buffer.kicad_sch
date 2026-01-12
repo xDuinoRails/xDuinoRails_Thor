@@ -671,7 +671,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6954d688-dc5e-457b-a102-992fb74862ed")
-		(property "Reference" "C1101"
+		(property "Reference" "C1001"
 			(at 33.02 58.801 0)
 			(effects
 				(font
@@ -842,7 +842,7 @@
 		(instances
 			(project "xDuinoRails-Thor-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/0bf87bfc-1a64-4ae3-9476-ab62edd28dcb"
-					(reference "C1101")
+					(reference "C1001")
 					(unit 1)
 				)
 			)
@@ -859,7 +859,7 @@
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "9f084e9b-6b99-46d2-a473-7c33a37c67f0")
-		(property "Reference" "C1102"
+		(property "Reference" "C1002"
 			(at 48.26 58.801 0)
 			(effects
 				(font
@@ -1030,7 +1030,7 @@
 		(instances
 			(project "xDuinoRails-Thor-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/0bf87bfc-1a64-4ae3-9476-ab62edd28dcb"
-					(reference "C1102")
+					(reference "C1002")
 					(unit 1)
 				)
 			)
@@ -1046,7 +1046,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a8c26bae-2131-46f4-a2fc-3863f4b49319")
-		(property "Reference" "R1101"
+		(property "Reference" "R1001"
 			(at 39.37 44.4499 0)
 			(effects
 				(font
@@ -1109,7 +1109,7 @@
 		(instances
 			(project ""
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/0bf87bfc-1a64-4ae3-9476-ab62edd28dcb"
-					(reference "R1101")
+					(reference "R1001")
 					(unit 1)
 				)
 			)
@@ -1124,7 +1124,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "febb2076-a7f6-432a-8f8c-a232917cd3a6")
-		(property "Reference" "D1101"
+		(property "Reference" "D1001"
 			(at 29.21 44.4499 90)
 			(effects
 				(font
@@ -1205,7 +1205,7 @@
 		(instances
 			(project ""
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/0bf87bfc-1a64-4ae3-9476-ab62edd28dcb"
-					(reference "D1101")
+					(reference "D1001")
 					(unit 1)
 				)
 			)
