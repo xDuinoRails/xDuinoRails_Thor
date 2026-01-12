@@ -21,7 +21,7 @@ outputs:
     dir: 'Plots'
     options:
       format: PDF
-      output: 'PCB_All.pdf'
+      output: '%f-PCB_All.pdf'
       pages:
         - layers: all
           sheet: 'S.'
@@ -32,7 +32,7 @@ outputs:
     dir: 'Plots'
     options:
       format: PDF
-      output: 'PCB_All_Layers_Big.pdf'
+      output: '%f-PCB_All_Layers_Big.pdf'
       scaling: 0
       plot_sheet_reference: true
       pages:
@@ -53,7 +53,7 @@ outputs:
     dir: 'Plots'
     options:
       format: PDF
-      output: 'PCB_FB_Cu_Layers.pdf'
+      output: '%f-PCB_FB_Cu_Layers.pdf'
       plot_sheet_reference: true
       pages:
         - layers: [ 'F.Cu', 'B.Cu' ]
@@ -64,7 +64,7 @@ outputs:
     dir: 'Plots'
     options:
       format: PDF
-      output: 'PCB_FB_Cu_Layers_Big.pdf'
+      output: '%f-PCB_FB_Cu_Layers_Big.pdf'
       scaling: 0
       plot_sheet_reference: true
       pages:
@@ -75,7 +75,7 @@ outputs:
     type: pcbdraw
     dir: 'Power_Check'
     options:
-      format: svg
+      format: png
       # PcbDraw nutzt 'highlight' (Liste von Netzen), um diese farblich zu markieren
       highlight: ['U+']
       # Zeige keine Komponenten, um den Fokus auf die Leiterbahnen zu legen (optional anpassbar)
@@ -89,7 +89,7 @@ outputs:
     type: pcbdraw
     dir: 'Power_Check'
     options:
-      format: svg
+      format: png
       highlight: ['GND']
       show_components: none
       output: '%f-GND.%x'
