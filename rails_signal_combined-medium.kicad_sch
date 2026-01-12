@@ -608,7 +608,7 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 251 255 196 1.0000)
 		)
 		(uuid "3f6df3ac-cacb-4a62-a6cd-afb105728627")
 		(property "Sheetname" "rails_signal_extraction_dcc"
@@ -671,7 +671,7 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 251 255 196 1.0000)
 		)
 		(uuid "b3e33b0b-4447-491d-8248-39a0d5e1dc57")
 		(property "Sheetname" "rails_signal_feedback_dcc-railcom-8x50"
@@ -754,7 +754,7 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 251 255 196 1.0000)
 		)
 		(uuid "deaf1b68-8bb1-4a22-bf5f-eab4be33579f")
 		(property "Sheetname" "rails-signal-acknowledge_dcc"

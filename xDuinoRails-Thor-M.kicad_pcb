@@ -16573,19 +16573,6 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "(+)"
-		(at 139.446 101.0495 180)
-		(layer "F.SilkS")
-		(uuid "b21880ad-efed-4d92-a443-c5eb617b914d")
-		(effects
-			(font
-				(size 1.5 1.5)
-				(thickness 0.3)
-				(bold yes)
-			)
-			(justify left bottom mirror)
-		)
-	)
 	(gr_text "(-)"
 		(at 148.336 101.0495 180)
 		(layer "F.SilkS")
@@ -16593,19 +16580,6 @@
 		(effects
 			(font
 				(size 1.5 1.5)
-				(thickness 0.3)
-				(bold yes)
-			)
-			(justify left bottom mirror)
-		)
-	)
-	(gr_text "(++)"
-		(at 145.923 110.1935 180)
-		(layer "F.SilkS")
-		(uuid "fb06f133-c07a-4c25-8496-d953793c34f3")
-		(effects
-			(font
-				(size 1.2 1.2)
 				(thickness 0.3)
 				(bold yes)
 			)
@@ -22467,8 +22441,7 @@
 	(group "subpcb_Stammblatt/rails_power_dc-dc-ldo-3v3_100mA"
 		(uuid "50766761-1cc3-4564-bf72-6d8e69873abc")
 		(members "2495a32d-55d5-45c7-bf0d-90cec6114754" "8e28e822-f441-4a15-be24-b48dd8eb495f"
-			"b21880ad-efed-4d92-a443-c5eb617b914d" "f0e60a2e-b953-45e2-a762-24d2fcbf639e"
-			"f9515013-ffaf-46c4-ab7f-0578365a6d72" "fb06f133-c07a-4c25-8496-d953793c34f3"
+			"f0e60a2e-b953-45e2-a762-24d2fcbf639e" "f9515013-ffaf-46c4-ab7f-0578365a6d72"
 		)
 	)
 	(group "subpcb_Stammblatt/c9229de7/rails_signal_feedback_dcc-railcom-8x50"
