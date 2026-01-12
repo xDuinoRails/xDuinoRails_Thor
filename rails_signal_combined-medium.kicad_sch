@@ -1,0 +1,821 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "fb33ec4e-6596-45d2-a121-8d3475acd69a")
+	(paper "A4")
+	(title_block
+		(title "xDuinoRail - RailcomDecoder - Development Kit \"Hermes\"")
+		(date "2026-01-11")
+		(rev "v1.0a")
+		(company "Chatelain Engineering, Bern - CH")
+	)
+	(lib_symbols
+		(symbol "GND_1"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_1_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:GND"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 71.12 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7a2cc077-44a5-42eb-b1b0-202f84f3b0f5")
+	)
+	(wire
+		(pts
+			(xy 153.67 72.39) (xy 153.67 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "019d81c7-c7d2-425c-8173-71ae83b7af5c")
+	)
+	(wire
+		(pts
+			(xy 35.56 55.88) (xy 57.15 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1935886c-7aef-43a0-b326-1d7c8ebbeeec")
+	)
+	(wire
+		(pts
+			(xy 71.12 102.87) (xy 71.12 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ee0dd46-27f8-4f45-a26d-477dd5bc97b0")
+	)
+	(wire
+		(pts
+			(xy 82.55 52.07) (xy 91.44 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2026a8cc-d2d0-46a2-bdef-408c0723d529")
+	)
+	(bus
+		(pts
+			(xy 166.37 55.88) (xy 180.34 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ce32fb8-d117-4bc9-ab5d-a6ada75731dd")
+	)
+	(wire
+		(pts
+			(xy 73.66 102.87) (xy 71.12 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f641397-e46a-4295-8127-1d5004cdc269")
+	)
+	(wire
+		(pts
+			(xy 71.12 97.79) (xy 71.12 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e7dfada-7c3f-4440-96b6-9d281e9e0f9c")
+	)
+	(wire
+		(pts
+			(xy 119.38 59.69) (xy 142.24 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86d2f10a-ba40-4ca3-b5c4-7a35574bd167")
+	)
+	(wire
+		(pts
+			(xy 149.86 41.91) (xy 147.32 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4bbdb0a-cddb-4c80-a72b-11142d943c9c")
+	)
+	(wire
+		(pts
+			(xy 35.56 87.63) (xy 57.15 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1cbade5-dc49-4ec1-8dcd-ea13a85bf7f8")
+	)
+	(bus
+		(pts
+			(xy 57.15 82.55) (xy 43.18 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e6ff17c5-ea95-4694-bc6a-32c3fdf58a10")
+	)
+	(wire
+		(pts
+			(xy 147.32 41.91) (xy 147.32 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5565f63-b301-4b43-9673-10bd2ad7e79e")
+	)
+	(text "DCC/RailCom Up- & Downlinks"
+		(exclude_from_sim no)
+		(at 81.28 25.4 0)
+		(effects
+			(font
+				(size 3.048 3.048)
+			)
+		)
+		(uuid "22e71609-67ae-4ed0-8816-bf5590c5238f")
+	)
+	(label "DCC1"
+		(at 91.44 52.07 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "16886b8c-4a90-4c6a-ad07-1b039f5ae6cf")
+	)
+	(label "RAILCOM_DATA"
+		(at 124.46 59.69 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1dd2d4a6-ce58-434e-90e8-4ea8f292be25")
+	)
+	(label "DCC[0..1]"
+		(at 168.91 55.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "419696f2-46be-4dc1-be52-f5f2964788b2")
+	)
+	(label "DCC_MM_SIGNAL"
+		(at 38.1 55.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9beaaadd-b1dc-4dca-9026-6e8a31889dd3")
+	)
+	(label "DCC_ACK"
+		(at 41.91 87.63 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b1155a01-e3b0-4a0d-878a-4a3da25c75e0")
+	)
+	(label "DCC[0..1]"
+		(at 54.61 82.55 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d4307b41-eec7-4a15-931d-0d6d921f50ec")
+	)
+	(hierarchical_label "RAILCOM_DATA"
+		(shape input)
+		(at 119.38 59.69 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3e82b399-60a4-4ed4-879d-729fb53d973a")
+	)
+	(hierarchical_label "+3V3"
+		(shape bidirectional)
+		(at 149.86 41.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6791bf3f-4c2c-4099-99c3-2e00fecc3601")
+	)
+	(hierarchical_label "DCC_MM_SIGNAL"
+		(shape output)
+		(at 35.56 55.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "99ca140c-96da-41c5-b4ad-323345a6b4fa")
+	)
+	(hierarchical_label "DCC[0..1]"
+		(shape input)
+		(at 180.34 55.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a065bd24-ac37-4fcb-937d-f2ffe35d81ca")
+	)
+	(hierarchical_label "DCC_ACK"
+		(shape input)
+		(at 35.56 87.63 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ed83188f-31b3-4e9c-9f51-f95db83bbbc4")
+	)
+	(hierarchical_label "GND"
+		(shape bidirectional)
+		(at 73.66 102.87 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f03ad621-6c2b-4209-bb1c-68fc4d52c96f")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 153.67 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "44fac783-a20d-4ebe-85d7-f2ce067e4437")
+		(property "Reference" "#PWR301"
+			(at 153.67 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 153.67 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 153.67 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 153.67 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 153.67 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "999f21cd-9a33-429c-8948-50569b2c4002")
+		)
+		(instances
+			(project "xDuinoRails-Fortuna-M"
+				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/c9229de7-1ed3-435d-9b11-33fa2e05ec65"
+					(reference "#PWR301")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "GND_1")
+		(lib_id "power:GND")
+		(at 71.12 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7d91ccc8-8516-4b33-8ce8-eeefd460602c")
+		(property "Reference" "#PWR302"
+			(at 71.12 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 71.12 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 71.12 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 71.12 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 71.12 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ce35280a-d548-4574-a91b-a25448bb036e")
+		)
+		(instances
+			(project "xDuinoRails-Fortuna-M"
+				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/c9229de7-1ed3-435d-9b11-33fa2e05ec65"
+					(reference "#PWR302")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet
+		(at 57.15 46.99)
+		(size 25.4 13.97)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "3f6df3ac-cacb-4a62-a6cd-afb105728627")
+		(property "Sheetname" "rails_signal_extraction_dcc"
+			(at 57.15 46.2784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "rails_signal_extraction_dcc.kicad_sch"
+			(at 57.15 61.5446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "DCC1" input
+			(at 82.55 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "a6abcac4-8e3d-4ba7-89e4-525ef68d30c8")
+		)
+		(pin "DCC_MM_SIGNAL" output
+			(at 57.15 55.88 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "b5560ef2-81b7-44cd-b489-cd164d353c96")
+		)
+		(instances
+			(project ""
+				(path "/cd43c477-9444-4f9e-afaa-a0c5d2f0e728/c9229de7-1ed3-435d-9b11-33fa2e05ec65"
+					(page "#")
+				)
+			)
+			(project "xDuinoRails-Thor-M"
+				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/c9229de7-1ed3-435d-9b11-33fa2e05ec65"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 142.24 46.99)
+		(size 24.13 25.4)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "b3e33b0b-4447-491d-8248-39a0d5e1dc57")
+		(property "Sheetname" "rails_signal_feedback_dcc-railcom-8x50"
+			(at 142.24 46.2784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "rails_signal_feedback_dcc-railcom-8x50.kicad_sch"
+			(at 142.24 72.9746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "DCC[0..1]" output
+			(at 166.37 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "94900539-bd01-45ac-ac33-6d0684ba4b1b")
+		)
+		(pin "RAILCOM_DATA" input
+			(at 142.24 59.69 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "afd290ce-cbae-4b17-98bd-f231d00c6983")
+		)
+		(pin "GND" input
+			(at 153.67 72.39 270)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "781bf803-9bff-4170-9d91-45f9f6acea49")
+		)
+		(pin "+3V3" input
+			(at 147.32 46.99 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "40d534ba-cd81-41a5-a9c2-f73cc4e59952")
+		)
+		(instances
+			(project ""
+				(path "/cd43c477-9444-4f9e-afaa-a0c5d2f0e728/c9229de7-1ed3-435d-9b11-33fa2e05ec65"
+					(page "#")
+				)
+			)
+			(project "xDuinoRails-Thor-M"
+				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/c9229de7-1ed3-435d-9b11-33fa2e05ec65"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 57.15 78.74)
+		(size 26.67 19.05)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "deaf1b68-8bb1-4a22-bf5f-eab4be33579f")
+		(property "Sheetname" "rails-signal-acknowledge_dcc"
+			(at 57.15 78.0284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "rails-signal-acknowledge_dcc.kicad_sch"
+			(at 57.15 98.3746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "DCC_ACK" input
+			(at 57.15 87.63 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "5ec244fa-5017-4d87-80f1-3df517e0e406")
+		)
+		(pin "GND" bidirectional
+			(at 71.12 97.79 270)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "66bb3c06-20c2-4bf8-9b10-e95176af7942")
+		)
+		(pin "DCC[0..1]" bidirectional
+			(at 57.15 82.55 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "ba3e1d88-7086-4c8f-9dda-76155f424df4")
+		)
+		(instances
+			(project ""
+				(path "/cd43c477-9444-4f9e-afaa-a0c5d2f0e728/c9229de7-1ed3-435d-9b11-33fa2e05ec65"
+					(page "#")
+				)
+			)
+			(project "xDuinoRails-Thor-M"
+				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/c9229de7-1ed3-435d-9b11-33fa2e05ec65"
+					(page "6")
+				)
+			)
+		)
+	)
+)
