@@ -1,0 +1,201 @@
+kibot:
+  version: 1
+
+preflight:
+  erc:
+    enabled: true
+    warnings_as_errors: false
+  drc:
+    enabled: false
+    warnings_as_errors: false
+
+outputs:
+  - name: 'PDF_Schaltplan'
+    comment: 'Erzeugt ein PDF des Schaltplans'
+    type: pdf_sch_print
+    dir: '.'
+
+  - name: 'PDF_PCB_alle_Lagen_zusammen'
+    comment: "Alle PCB Lagen in einem PDF"
+    type: pcb_print
+    dir: 'Plots'
+    options:
+      format: PDF
+      output: 'PCB_All.pdf'
+      pages:
+        - layers: all
+          sheet: 'S.'
+
+  - name: 'PDF_PCB_alle_Lagen_einzeln_gross'
+    comment: "Alle PCB Lagen Gross (Migriert)"
+    type: pcb_print
+    dir: 'Plots'
+    options:
+      format: PDF
+      output: 'PCB_All_Layers_Big.pdf'
+      scaling: 0
+      plot_sheet_reference: true
+      pages:
+        - layers: [ 'F.Cu' ]
+        - layers: [ 'In1.Cu' ]
+        - layers: [ 'In2.Cu' ]
+        - layers: [ 'B.Cu' ]
+        - layers: [ 'F.SilkS' ]
+        - layers: [ 'B.SilkS' ]
+        - layers: [ 'F.Mask' ]
+        - layers: [ 'B.Mask' ]
+        - layers: [ 'Edge.Cuts' ]
+        - layers: [ 'F.Fab' ]
+
+  - name: 'PDF_PCB_auessere_Kupfer_Lagen'
+    comment: "Äussere PCB Kupfer Lagen"
+    type: pcb_print
+    dir: 'Plots'
+    options:
+      format: PDF
+      output: 'PCB_FB_Cu_Layers.pdf'
+      plot_sheet_reference: true
+      pages:
+        - layers: [ 'F.Cu', 'B.Cu' ]
+
+  - name: 'PDF_PCB_auessere_Kupfer_Lagen_gross'
+    comment: "Äussere PCB Kupfer Lagen"
+    type: pcb_print
+    dir: 'Plots'
+    options:
+      format: PDF
+      output: 'PCB_FB_Cu_Layers_Big.pdf'
+      scaling: 0
+      plot_sheet_reference: true
+      pages:
+        - layers: [ 'F.Cu', 'B.Cu' ]
+
+  - name: 'highlight_u_plus'
+    comment: 'Hervorhebung des Netzes U+ auf Seitengröße'
+    type: pcbdraw
+    dir: 'Power_Check'
+    options:
+      format: PDF
+      # PcbDraw nutzt 'highlight' (Liste von Netzen), um diese farblich zu markieren
+      highlight: ['U+']
+      # Zeige keine Komponenten, um den Fokus auf die Leiterbahnen zu legen (optional anpassbar)
+      show_components: none
+      # Stellt sicher, dass das Board auf der Seite zentriert/sichtbar ist
+      # Hinweis: PcbDraw exportiert oft in Board-Größe. Für A4-Scaling müsste man ggf. SVG nutzen und konvertieren.
+      output: '%f-U_Plus.%x'
+
+  - name: 'highlight_gnd'
+    comment: 'Hervorhebung des Netzes GND auf Seitengröße'
+    type: pcbdraw
+    dir: 'Power_Check'
+    options:
+      format: PDF
+      highlight: ['GND']
+      show_components: none
+      output: '%f-GND.%x'
+
+#  - name: '3D_Top_View'
+#    comment: "Raytracing Render der Oberseite (Blender)"
+#    type: blender_export    # <--- NEUER TYP
+#    run_by_default: false
+#    dir: 'images'
+#    options:
+#      render_options:
+#        samples: 10         # Weniger Samples für schnelleren CI-Build
+#      point_of_view:
+#        view: top
+#      outputs:
+#        - type: render
+#          output: 'PCB_3D_Top_View.png'
+
+#  - name: '3D_Bottom_View'
+#    comment: "Raytracing Render der Unterseite (Blender)"
+#    type: blender_export    # <--- NEUER TYP
+#    run_by_default: false
+#    dir: 'images'
+#    options:
+#      render_options:
+#        samples: 10
+#      point_of_view:
+#        view: bottom
+#      outputs:
+#        - type: render
+#          output: 'PCB_3D_Bottom_View.png'
+
+  - name: 'Gerber_Dateien'
+    comment: 'Erzeugt Gerber-Daten für die Fertigung'
+    type: gerber
+    dir: 'CAM'
+    options:
+      use_protel_extensions: true
+
+  - name: 'Bohr_Dateien'
+    comment: 'Erzeugt Excellon-Bohrdateien'
+    type: excellon
+    dir: 'CAM'
+
+  - name: 'Stueckliste_BOM'
+    comment: 'Erzeugt eine Stückliste im CSV-Format'
+    type: bom
+    dir: 'CAM'
+    options:
+      format: CSV
+      columns:
+        - field: 'Reference'
+          name: 'Designator'
+        - field: 'Value'
+          name: 'Value'
+        - field: 'Footprint'
+          name: 'Package'
+        - field: 'LCSC'
+          name: 'LCSC Part #'
+        - field: 'Quantity'
+          name: 'Quantity'
+
+  - name: 'position_files'
+    comment: 'Positionsdateien für die Bestückung (Pick & Place)'
+    type: position
+    dir: 'CAM'
+    options:
+      format: 'CSV'
+      units: 'millimeters'
+      separate_files_for_front_and_back: true
+      columns:
+        - id: Ref
+          name: Designator
+        - id: PosX
+          name: "Mid X"
+        - id: PosY
+          name: "Mid Y"
+        - id: Side
+          name: Layer
+        - id: Rot
+          name: Rotation
+
+  - name: 'Spice_Netlist'
+    comment: 'Export ngspice netlist'
+    type: netlist
+    dir: 'Spice'
+    options:
+      format: 'spice'
+
+  - name: 'Fertigungsdaten_ZIP'
+    comment: 'Erzeugt ein ZIP-Archiv mit allen Fertigungsdaten'
+    type: compress
+    dir: 'gen_docs'
+    options:
+      format: ZIP
+      files:
+        - from_output: 'Gerber_Dateien'
+          dest: ''
+        - from_output: 'Bohr_Dateien'
+          dest: ''
+
+  - name: 'Archive'
+    comment: 'Creates a ZIP file with all generated documentation'
+    type: compress
+    dir: '.'
+    options:
+      output: 'KiCad-Board-Documentation.zip'
+      files:
+        - source: 'gen_docs/**'
