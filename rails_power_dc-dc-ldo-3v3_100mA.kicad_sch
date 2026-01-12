@@ -641,10 +641,11 @@
 	)
 	(text "DC-DC voltage regulator 3.3V\n"
 		(exclude_from_sim no)
-		(at 61.976 27.686 0)
+		(at 69.85 27.94 0)
 		(effects
 			(font
 				(size 3.048 3.048)
+				(thickness 0.381)
 			)
 		)
 		(uuid "a76d4c3f-1db9-44fb-b638-4d14cd1e3899")
