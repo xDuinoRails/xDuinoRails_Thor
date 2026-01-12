@@ -203,6 +203,7 @@ outputs:
     options:
       dark_mode: true
       sort_order: 'C,R,L,D,U,J,T'
-      show_fields: ['Value', 'Footprint']
-      group_fields: ['Value', 'Footprint']
+      # ÄNDERUNG: Werte als kommagetrennter String, nicht als Liste
+      show_fields: 'Value,Footprint'
+      group_fields: 'Value,Footprint'
       output: '%f-iBOM.html'
