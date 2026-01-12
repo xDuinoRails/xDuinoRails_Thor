@@ -2304,7 +2304,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6dab23ea-d8b7-4526-8651-efc2326ecf0e")
 		(property "Reference" "J701"
@@ -2342,6 +2342,15 @@
 			)
 		)
 		(property "Description" "Generic connector, double row, 02x11, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 58.42 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OLI_ID" "MTC21_02x11_1.27"
 			(at 58.42 92.71 0)
 			(effects
 				(font
