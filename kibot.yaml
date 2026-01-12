@@ -196,3 +196,13 @@ outputs:
       output: 'KiCad-Board-Documentation.zip'
       files:
         - source: 'gen_docs/**'
+
+  - name: 'Interactive_BOM'
+    comment: 'Erzeugt eine interaktive HTML-Stückliste (iBOM)'
+    type: ibom
+    options:
+      dark_mode: true
+      sort_order: 'C,R,L,D,U,J,T'
+      show_fields: ['Value', 'Footprint']
+      group_fields: ['Value', 'Footprint']
+      output: '%f-iBOM.html'
