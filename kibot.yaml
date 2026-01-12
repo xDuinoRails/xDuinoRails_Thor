@@ -119,12 +119,15 @@ outputs:
   - name: 'Gerber_Dateien'
     comment: 'Erzeugt Gerber-Daten für die Fertigung'
     type: gerber
+    dir: 'grbr'
     options:
       use_protel_extensions: true
 
   - name: 'Bohr_Dateien'
     comment: 'Erzeugt Excellon-Bohrdateien'
     type: excellon
+    dir: 'grbr'
+
 
   - name: 'Stueckliste_BOM'
     comment: 'Erzeugt eine Stückliste im CSV-Format'
@@ -177,9 +180,9 @@ outputs:
       format: ZIP
       files:
         - from_output: 'Gerber_Dateien'
-          dest: ''
+          dest: '/'
         - from_output: 'Bohr_Dateien'
-          dest: ''
+          dest: '/'
 
   - name: 'Archive'
     comment: 'Creates a ZIP file with all generated documentation'
