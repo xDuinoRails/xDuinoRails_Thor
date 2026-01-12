@@ -858,7 +858,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "08069ce0-37c9-4daf-a1f8-b9e42cf52c19")
-		(property "Reference" "R501"
+		(property "Reference" "R601"
 			(at 62.23 53.34 90)
 			(effects
 				(font
@@ -1009,7 +1009,7 @@
 		(instances
 			(project "xDuinoRails-Fortuna-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/c9229de7-1ed3-435d-9b11-33fa2e05ec65/deaf1b68-8bb1-4a22-bf5f-eab4be33579f"
-					(reference "R501")
+					(reference "R601")
 					(unit 1)
 				)
 			)
@@ -1025,7 +1025,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "319d2021-5fed-4674-9480-8a7b879b51c3")
-		(property "Reference" "D501"
+		(property "Reference" "D601"
 			(at 68.58 30.48 0)
 			(effects
 				(font
@@ -1117,7 +1117,7 @@
 		(instances
 			(project "xDuinoRails-Fortuna-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/c9229de7-1ed3-435d-9b11-33fa2e05ec65/deaf1b68-8bb1-4a22-bf5f-eab4be33579f"
-					(reference "D501")
+					(reference "D601")
 					(unit 1)
 				)
 			)
@@ -1132,7 +1132,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8e40fe18-eb2f-4d33-a104-125c8fd16cd5")
-		(property "Reference" "R502"
+		(property "Reference" "R602"
 			(at 46.99 72.39 90)
 			(effects
 				(font
@@ -1283,7 +1283,7 @@
 		(instances
 			(project "xDuinoRails-Fortuna-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/c9229de7-1ed3-435d-9b11-33fa2e05ec65/deaf1b68-8bb1-4a22-bf5f-eab4be33579f"
-					(reference "R502")
+					(reference "R602")
 					(unit 1)
 				)
 			)
@@ -1298,7 +1298,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f26a7b70-4b21-4638-94b6-4f8d64ecaa0f")
-		(property "Reference" "Q501"
+		(property "Reference" "Q601"
 			(at 71.12 77.47 0)
 			(effects
 				(font
@@ -1466,7 +1466,7 @@
 		(instances
 			(project "xDuinoRails-Fortuna-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/c9229de7-1ed3-435d-9b11-33fa2e05ec65/deaf1b68-8bb1-4a22-bf5f-eab4be33579f"
-					(reference "Q501")
+					(reference "Q601")
 					(unit 1)
 				)
 			)

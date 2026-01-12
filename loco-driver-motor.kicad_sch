@@ -597,6 +597,102 @@
 				)
 			)
 		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
 	)
 	(junction
 		(at 90.17 76.2)
@@ -671,6 +767,12 @@
 		(uuid "48e51172-ed99-42c1-b126-cd47978da81b")
 	)
 	(junction
+		(at 43.18 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "56c9a49c-6aab-4ff5-9872-3b5ceb8b5180")
+	)
+	(junction
 		(at 46.99 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -735,6 +837,16 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ed332bfa-d345-4c1f-8159-af94ce4e7b61")
+	)
+	(wire
+		(pts
+			(xy 43.18 91.44) (xy 52.07 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "044d9b3d-f8ca-4e89-91c8-ca79816b17c9")
 	)
 	(wire
 		(pts
@@ -1148,7 +1260,7 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 91.44) (xy 52.07 91.44)
+			(xy 31.75 91.44) (xy 43.18 91.44)
 		)
 		(stroke
 			(width 0)
@@ -1464,7 +1576,7 @@
 		(on_board no)
 		(dnp yes)
 		(uuid "1458b582-30b1-406f-87cf-12c58515993a")
-		(property "Reference" "TP806"
+		(property "Reference" "TP906"
 			(at 101.6 74.9299 0)
 			(effects
 				(font
@@ -1515,7 +1627,7 @@
 		(instances
 			(project "xDuinoRails-Thor-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/28e0fa6a-354f-41d6-8b58-d1dd784eb1fe"
-					(reference "TP806")
+					(reference "TP906")
 					(unit 1)
 				)
 			)
@@ -1530,7 +1642,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2bf60704-2b8b-4d89-8354-dc1a7621affe")
-		(property "Reference" "U801"
+		(property "Reference" "U901"
 			(at 58.166 85.344 0)
 			(effects
 				(font
@@ -1668,7 +1780,7 @@
 		(instances
 			(project "xDuinoRails-Thor-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/28e0fa6a-354f-41d6-8b58-d1dd784eb1fe"
-					(reference "U801")
+					(reference "U901")
 					(unit 1)
 				)
 			)
@@ -1683,7 +1795,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2d20c6fc-77f3-4d80-b43c-d592a0149d70")
-		(property "Reference" "R803"
+		(property "Reference" "R903"
 			(at 72.39 96.52 90)
 			(effects
 				(font
@@ -1798,7 +1910,7 @@
 		(instances
 			(project "xDuinoRails-Thor-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/28e0fa6a-354f-41d6-8b58-d1dd784eb1fe"
-					(reference "R803")
+					(reference "R903")
 					(unit 1)
 				)
 			)
@@ -1813,7 +1925,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5a91f7b3-85da-4543-8718-b773358aeb2f")
-		(property "Reference" "R802"
+		(property "Reference" "R902"
 			(at 96.52 82.55 90)
 			(effects
 				(font
@@ -1928,7 +2040,73 @@
 		(instances
 			(project "xDuinoRails-Thor-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/28e0fa6a-354f-41d6-8b58-d1dd784eb1fe"
-					(reference "R802")
+					(reference "R902")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 43.18 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6fb7554f-a403-4ce2-beb5-ed451e35e045")
+		(property "Reference" "#FLG901"
+			(at 43.18 89.535 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 43.18 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 43.18 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 43.18 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 43.18 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cb645a07-f486-4e1a-b47a-001ce51b89da")
+		)
+		(instances
+			(project ""
+				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/28e0fa6a-354f-41d6-8b58-d1dd784eb1fe"
+					(reference "#FLG901")
 					(unit 1)
 				)
 			)
@@ -1944,7 +2122,7 @@
 		(on_board no)
 		(dnp yes)
 		(uuid "7247a333-1073-4da7-8ae6-18e97260cf08")
-		(property "Reference" "TP809"
+		(property "Reference" "TP909"
 			(at 50.8 90.1699 0)
 			(effects
 				(font
@@ -1995,7 +2173,7 @@
 		(instances
 			(project "xDuinoRails-Thor-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/28e0fa6a-354f-41d6-8b58-d1dd784eb1fe"
-					(reference "TP809")
+					(reference "TP909")
 					(unit 1)
 				)
 			)
@@ -2012,7 +2190,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7eccaf43-85ae-4ab3-b4fc-fff7e8c61760")
-		(property "Reference" "R801"
+		(property "Reference" "R901"
 			(at 78.74 82.55 90)
 			(effects
 				(font
@@ -2127,7 +2305,7 @@
 		(instances
 			(project "xDuinoRails-Thor-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/28e0fa6a-354f-41d6-8b58-d1dd784eb1fe"
-					(reference "R801")
+					(reference "R901")
 					(unit 1)
 				)
 			)
@@ -2143,7 +2321,7 @@
 		(on_board no)
 		(dnp yes)
 		(uuid "8a9e3819-42fa-4ed3-950c-ed13166c6201")
-		(property "Reference" "TP804"
+		(property "Reference" "TP904"
 			(at 101.6 72.3899 0)
 			(effects
 				(font
@@ -2194,7 +2372,7 @@
 		(instances
 			(project "xDuinoRails-Thor-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/28e0fa6a-354f-41d6-8b58-d1dd784eb1fe"
-					(reference "TP804")
+					(reference "TP904")
 					(unit 1)
 				)
 			)
@@ -2210,7 +2388,7 @@
 		(on_board no)
 		(dnp yes)
 		(uuid "943a0be4-8e78-440a-a45e-9856abdfa7fd")
-		(property "Reference" "TP808"
+		(property "Reference" "TP908"
 			(at 101.6 88.8999 0)
 			(effects
 				(font
@@ -2261,7 +2439,7 @@
 		(instances
 			(project "xDuinoRails-Thor-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/28e0fa6a-354f-41d6-8b58-d1dd784eb1fe"
-					(reference "TP808")
+					(reference "TP908")
 					(unit 1)
 				)
 			)
@@ -2276,7 +2454,7 @@
 		(on_board no)
 		(dnp yes)
 		(uuid "998fd0c6-a7cc-49a8-bfa8-1b6799b3c7ac")
-		(property "Reference" "TP802"
+		(property "Reference" "TP902"
 			(at 71.12 44.4499 0)
 			(effects
 				(font
@@ -2327,7 +2505,7 @@
 		(instances
 			(project "xDuinoRails-Thor-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/28e0fa6a-354f-41d6-8b58-d1dd784eb1fe"
-					(reference "TP802")
+					(reference "TP902")
 					(unit 1)
 				)
 			)
@@ -2343,7 +2521,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9b7961fd-1a62-46f2-a1b3-ca9dc0d1621e")
-		(property "Reference" "C804"
+		(property "Reference" "C904"
 			(at 93.98 53.3399 0)
 			(effects
 				(font
@@ -2460,7 +2638,7 @@
 		(instances
 			(project "xDuinoRails-Thor-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/28e0fa6a-354f-41d6-8b58-d1dd784eb1fe"
-					(reference "C804")
+					(reference "C904")
 					(unit 1)
 				)
 			)
@@ -2476,7 +2654,7 @@
 		(on_board no)
 		(dnp yes)
 		(uuid "a4d8fffb-9ede-46a5-a01a-b585ebc444d6")
-		(property "Reference" "TP801"
+		(property "Reference" "TP901"
 			(at 60.96 44.4499 0)
 			(effects
 				(font
@@ -2527,7 +2705,7 @@
 		(instances
 			(project "xDuinoRails-Thor-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/28e0fa6a-354f-41d6-8b58-d1dd784eb1fe"
-					(reference "TP801")
+					(reference "TP901")
 					(unit 1)
 				)
 			)
@@ -2544,7 +2722,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a7fd313c-88b3-4931-81a2-ca67743e103b")
-		(property "Reference" "R804"
+		(property "Reference" "R904"
 			(at 82.55 95.2499 0)
 			(effects
 				(font
@@ -2661,7 +2839,7 @@
 		(instances
 			(project "xDuinoRails-Thor-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/28e0fa6a-354f-41d6-8b58-d1dd784eb1fe"
-					(reference "R804")
+					(reference "R904")
 					(unit 1)
 				)
 			)
@@ -2677,7 +2855,7 @@
 		(on_board no)
 		(dnp yes)
 		(uuid "b1d375ec-4148-4338-81b4-85555ca12e26")
-		(property "Reference" "TP803"
+		(property "Reference" "TP903"
 			(at 50.8 72.3899 0)
 			(effects
 				(font
@@ -2728,7 +2906,7 @@
 		(instances
 			(project "xDuinoRails-Thor-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/28e0fa6a-354f-41d6-8b58-d1dd784eb1fe"
-					(reference "TP803")
+					(reference "TP903")
 					(unit 1)
 				)
 			)
@@ -2744,7 +2922,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bc049482-7b7a-48a3-ab75-c13c0d8a0a05")
-		(property "Reference" "C803"
+		(property "Reference" "C903"
 			(at 78.74 53.3399 0)
 			(effects
 				(font
@@ -2861,7 +3039,7 @@
 		(instances
 			(project "xDuinoRails-Thor-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/28e0fa6a-354f-41d6-8b58-d1dd784eb1fe"
-					(reference "C803")
+					(reference "C903")
 					(unit 1)
 				)
 			)
@@ -2877,7 +3055,7 @@
 		(on_board no)
 		(dnp yes)
 		(uuid "c75e8458-ce3b-4ff3-bb2a-b6e833def77e")
-		(property "Reference" "TP807"
+		(property "Reference" "TP907"
 			(at 101.6 86.3599 0)
 			(effects
 				(font
@@ -2928,7 +3106,7 @@
 		(instances
 			(project "xDuinoRails-Thor-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/28e0fa6a-354f-41d6-8b58-d1dd784eb1fe"
-					(reference "TP807")
+					(reference "TP907")
 					(unit 1)
 				)
 			)
@@ -2944,7 +3122,7 @@
 		(on_board no)
 		(dnp yes)
 		(uuid "cd83f992-a70f-454b-a4ce-ec6bb92926ec")
-		(property "Reference" "TP810"
+		(property "Reference" "TP910"
 			(at 64.77 102.8699 0)
 			(effects
 				(font
@@ -2995,7 +3173,7 @@
 		(instances
 			(project "xDuinoRails-Thor-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/28e0fa6a-354f-41d6-8b58-d1dd784eb1fe"
-					(reference "TP810")
+					(reference "TP910")
 					(unit 1)
 				)
 			)
@@ -3012,7 +3190,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ce95552a-8b6f-4c33-a0e7-3feb6def005d")
-		(property "Reference" "C801"
+		(property "Reference" "C901"
 			(at 35.56 53.3399 0)
 			(effects
 				(font
@@ -3129,7 +3307,7 @@
 		(instances
 			(project "xDuinoRails-Thor-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/28e0fa6a-354f-41d6-8b58-d1dd784eb1fe"
-					(reference "C801")
+					(reference "C901")
 					(unit 1)
 				)
 			)
@@ -3145,7 +3323,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e500cbf8-a7cd-4e5d-9053-53cc5a0182a9")
-		(property "Reference" "C802"
+		(property "Reference" "C902"
 			(at 50.8 55.8801 0)
 			(effects
 				(font
@@ -3262,7 +3440,7 @@
 		(instances
 			(project "xDuinoRails-Thor-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/28e0fa6a-354f-41d6-8b58-d1dd784eb1fe"
-					(reference "C802")
+					(reference "C902")
 					(unit 1)
 				)
 			)
@@ -3278,7 +3456,7 @@
 		(on_board no)
 		(dnp yes)
 		(uuid "e5f44a05-4119-436a-bb9c-d5da408be5d7")
-		(property "Reference" "TP805"
+		(property "Reference" "TP905"
 			(at 50.8 74.9299 0)
 			(effects
 				(font
@@ -3329,7 +3507,7 @@
 		(instances
 			(project "xDuinoRails-Thor-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/28e0fa6a-354f-41d6-8b58-d1dd784eb1fe"
-					(reference "TP805")
+					(reference "TP905")
 					(unit 1)
 				)
 			)
@@ -3344,7 +3522,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f73e7ab4-ad38-40b8-9e70-8a103117f1ac")
-		(property "Reference" "R805"
+		(property "Reference" "R905"
 			(at 92.71 95.2499 0)
 			(effects
 				(font
@@ -3461,7 +3639,7 @@
 		(instances
 			(project "xDuinoRails-Thor-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/28e0fa6a-354f-41d6-8b58-d1dd784eb1fe"
-					(reference "R805")
+					(reference "R905")
 					(unit 1)
 				)
 			)

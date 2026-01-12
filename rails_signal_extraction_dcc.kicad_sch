@@ -205,7 +205,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8123e40c-480e-446e-869a-525f469145a1")
-		(property "Reference" "R401"
+		(property "Reference" "R501"
 			(at 52.07 31.75 90)
 			(effects
 				(font
@@ -311,7 +311,7 @@
 		(instances
 			(project "xDuinoRails-Fortuna-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/c9229de7-1ed3-435d-9b11-33fa2e05ec65/3f6df3ac-cacb-4a62-a6cd-afb105728627"
-					(reference "R401")
+					(reference "R501")
 					(unit 1)
 				)
 			)

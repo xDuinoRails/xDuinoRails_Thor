@@ -476,7 +476,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "44fac783-a20d-4ebe-85d7-f2ce067e4437")
-		(property "Reference" "#PWR301"
+		(property "Reference" "#PWR401"
 			(at 153.67 82.55 0)
 			(effects
 				(font
@@ -526,7 +526,7 @@
 		(instances
 			(project "xDuinoRails-Fortuna-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/c9229de7-1ed3-435d-9b11-33fa2e05ec65"
-					(reference "#PWR301")
+					(reference "#PWR401")
 					(unit 1)
 				)
 			)
@@ -543,7 +543,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7d91ccc8-8516-4b33-8ce8-eeefd460602c")
-		(property "Reference" "#PWR302"
+		(property "Reference" "#PWR402"
 			(at 71.12 111.76 0)
 			(effects
 				(font
@@ -593,7 +593,7 @@
 		(instances
 			(project "xDuinoRails-Fortuna-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/c9229de7-1ed3-435d-9b11-33fa2e05ec65"
-					(reference "#PWR302")
+					(reference "#PWR402")
 					(unit 1)
 				)
 			)
