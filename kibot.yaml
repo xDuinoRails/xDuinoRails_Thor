@@ -103,25 +103,14 @@ outputs:
       show_components: none
       output: '%f-GND.%x'
 
-  - name: '3D_Top_View_Clean'
-    comment: "Render ohne Referenzen"
-    type: render_3d
-    dir: 'images'
-    options:
-      view: top
-      ray_tracing: true
-      # Hier die Variante aktivieren
-      variant: 'clean_render_variant'
-      output: '%f-3D_Top_Clean.png'
-
   - name: '3D_Top_View'
     comment: "Render der Oberseite (KiCad Internal)"
     # Doku bestätigt: 'render_3d' ist der korrekte Typ
     type: render_3d
     dir: 'images'
     options:
-      width: 2048
-      height: 1536
+      width: 1024
+      height: 768
       view: top      
       output: '%f-3D_Top.png'
 
@@ -130,10 +119,10 @@ outputs:
     type: render_3d
     dir: 'images'
     options:
-      width: 2048
-      height: 1536
+      width: 1024
+      height: 768
       view: bottom
-      ray_tracing: true
+      # ray_tracing: true
       output: '%f-3D_Bottom.png'
 
   - name: 'Gerber_Dateien'
@@ -142,9 +131,7 @@ outputs:
     dir: 'grbr'
     options:
       use_protel_extensions: true
-      # Unterdrückt die Referenzbezeichner (z.B. U101, R5)
       plot_footprint_refs: false
-      # Optional: Unterdrückt auch die Werte (z.B. 10k, 100nF), falls gewünscht
       plot_footprint_values: false      
 
   - name: 'Bohr_Dateien'
