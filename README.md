@@ -1,8 +1,12 @@
 # A mtc21 Semi-Decoder
 
-A board with all low-level hardware needed to make a Seeed XIAO board a mtc21 decoder.
+Make a Seeed XIAO board a mtc21 decoder, all the electronics needed is on this little board:
+- mtc21 connector (but not the size)
+- DC Motor
+- 2x Functions
+- DCC / DCC-ACK / RailCom
 
-![Alt text](images/xDuinoRails-Thor-M-3D_Top.png)
+<img src="images/xDuinoRails-Thor-M-3D_Top.png" width="50%" alt="Alt text"><img src="images/xDuinoRails-Thor-M-3D_Bottom.png" width="50%" alt="Alt text">
 
 ## Wiring
 
