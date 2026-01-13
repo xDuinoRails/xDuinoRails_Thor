@@ -117,7 +117,7 @@ jobs:
         with:
           # This grabs all files recursively inside the artifacts folder
           files: |
-            artifacts/artifacts-xDuinoRails-Thor-M/xDuinoRails-Thor-M-schematic.pdf
-            artifacts/artifacts-xDuinoRails-Thor-M/documentations/xDuinoRails-Thor-M-PCB*.pdf
+            artifacts/xDuinoRails-Thor-M-schematic.pdf
+            artifacts/xDuinoRails-Thor-M-PCB*.pdf
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
