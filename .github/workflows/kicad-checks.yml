@@ -35,8 +35,14 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # --- REMOVED BROKEN CACHE STEP HERE ---
-
+      - name: Find Pinion Config
+        id: find_pinion_config
+        run: |
+          if [ -f "${{ matrix.project }}.pinion.yaml" ]; then
+            echo "found=true" >> $GITHUB_OUTPUT
+          else
+            echo "found=false" >> $GITHUB_OUTPUT
+          fi
       - name: Run KiBot (Manufacturing)
         uses: INTI-CMNB/KiBot@v2_k8
         with:
@@ -45,6 +51,19 @@ jobs:
           board: ${{ matrix.project }}.kicad_pcb
           # KiBot will put output files into this folder:
           dir: assets/${{ matrix.project }}
+          pre_launch_script: |
+            # Install pinion dependencies
+            apt-get update
+            apt-get install -y libjpeg-dev zlib1g-dev
+            # Install pinion
+            pip3 install pinion
+          post_launch_script: |
+            # Run pinion if config exists
+            if [ "${{ steps.find_pinion_config.outputs.found }}" = "true" ]; then
+              pinion render \
+                --config ${{ matrix.project }}.pinion.yaml \
+                --output assets/${{ matrix.project }}/pinout.svg
+            fi
 
       # --- NEW STEP: SAVE THE FILES ---
       - name: Upload Artifacts
@@ -54,6 +73,31 @@ jobs:
           name: artifacts-${{ matrix.project }}
           # Upload the directory where KiBot generated the files
           path: assets/${{ matrix.project }}
+
+  deploy:
+    needs: check
+    if: github.ref == 'refs/heads/main'
+    permissions:
+      pages: write
+      id-token: write
+    concurrency:
+      group: "pages"
+      cancel-in-progress: true
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download all artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: artifacts/
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "artifacts/artifacts-xDuinoRails-Thor-M"
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
 
   release:
     needs: check
@@ -72,6 +116,8 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           # This grabs all files recursively inside the artifacts folder
-          files: artifacts/**/*
+          files: |
+            artifacts/artifacts-xDuinoRails-Thor-M/xDuinoRails-Thor-M-schematic.pdf
+            artifacts/artifacts-xDuinoRails-Thor-M/documentations/xDuinoRails-Thor-M-PCB*.pdf
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
