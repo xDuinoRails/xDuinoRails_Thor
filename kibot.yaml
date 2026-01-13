@@ -217,15 +217,6 @@ outputs:
       output: board_top.png
       style: oshpark-purple
 
-  - name: 'Archive'
-    comment: 'Creates a ZIP file with all generated documentation'
-    type: compress
-    dir: '.'
-    options:
-      output: 'KiCad-Board-Documentation.zip'
-      files:
-        - source: 'gen_docs/**'
-
   - name: 'Interactive_BOM'
     comment: 'Erzeugt eine interaktive HTML-Stückliste (iBOM)'
     type: ibom
