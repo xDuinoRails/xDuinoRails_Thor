@@ -112,6 +112,7 @@ outputs:
       width: 1024
       height: 768
       view: top      
+      variant: 'clean_render_variant'
       output: '%f-3D_Top.png'
 
   - name: '3D_Bottom_View'
