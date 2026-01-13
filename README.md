@@ -6,7 +6,7 @@ Make a Seeed XIAO board a mtc21 decoder, all the electronics needed is on this l
 - 2x Functions
 - DCC / DCC-ACK / RailCom
 
-Open-Source [Schematics](xDuinoRails-Thor-M-schematic.pdf) and [PCB design](xDuinoRails-Thor-M-PCB_All.pdf) included.
+Open-Source [schematics](xDuinoRails-Thor-M-schematic.pdf) and [PCB design](xDuinoRails-Thor-M-PCB_All.pdf) included.
 
 <img src="images/xDuinoRails-Thor-M-3D_Top.png" width="50%" alt="Alt text"><img src="images/xDuinoRails-Thor-M-3D_Bottom.png" width="50%" alt="Alt text">
 
