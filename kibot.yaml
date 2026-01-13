@@ -1,6 +1,21 @@
 kibot:
   version: 1
 
+filters:
+  - name: 'hide_refs'
+    comment: 'Ersetzt den Referenz-Text durch ein Leerzeichen'
+    type: field_modify
+    fields: ['Reference']
+    regex: '.*'
+    replace: ' '
+
+variants:
+  - name: 'clean_render_variant'
+    comment: 'Variante ohne sichtbare Referenzen'
+    type: kibom
+    pre_transform:
+      - 'hide_refs'
+
 preflight:
   erc:
     enabled: true
@@ -88,33 +103,38 @@ outputs:
       show_components: none
       output: '%f-GND.%x'
 
-#  - name: '3D_Top_View'
-#    comment: "Raytracing Render der Oberseite (Blender)"
-#    type: blender_export    # <--- NEUER TYP
-#    run_by_default: false
-#    dir: 'images'
-#    options:
-#      render_options:
-#        samples: 10         # Weniger Samples für schnelleren CI-Build
-#      point_of_view:
-#        view: top
-#      outputs:
-#        - type: render
-#          output: 'PCB_3D_Top_View.png'
+  - name: '3D_Top_View_Clean'
+    comment: "Render ohne Referenzen"
+    type: render_3d
+    dir: 'images'
+    options:
+      view: top
+      ray_tracing: true
+      # Hier die Variante aktivieren
+      variant: 'clean_render_variant'
+      output: '%f-3D_Top_Clean.png'
 
-#  - name: '3D_Bottom_View'
-#    comment: "Raytracing Render der Unterseite (Blender)"
-#    type: blender_export    # <--- NEUER TYP
-#    run_by_default: false
-#    dir: 'images'
-#    options:
-#      render_options:
-#        samples: 10
-#      point_of_view:
-#        view: bottom
-#      outputs:
-#        - type: render
-#          output: 'PCB_3D_Bottom_View.png'
+  - name: '3D_Top_View'
+    comment: "Render der Oberseite (KiCad Internal)"
+    # Doku bestätigt: 'render_3d' ist der korrekte Typ
+    type: render_3d
+    dir: 'images'
+    options:
+      width: 2048
+      height: 1536
+      view: top      
+      output: '%f-3D_Top.png'
+
+  - name: '3D_Bottom_View'
+    comment: "Render der Unterseite (KiCad Internal)"
+    type: render_3d
+    dir: 'images'
+    options:
+      width: 2048
+      height: 1536
+      view: bottom
+      ray_tracing: true
+      output: '%f-3D_Bottom.png'
 
   - name: 'Gerber_Dateien'
     comment: 'Erzeugt Gerber-Daten für die Fertigung'
@@ -187,6 +207,15 @@ outputs:
           dest: '/'
         - from_output: 'Bohr_Dateien'
           dest: '/'
+
+  - name: 'Pinion_Image'
+    comment: 'Generate a picture of the board for Pinion'
+    type: pcbdraw
+    dir: 'assets'
+    options:
+      format: png
+      output: board_top.png
+      style: oshpark-purple
 
   - name: 'Archive'
     comment: 'Creates a ZIP file with all generated documentation'
