@@ -1,0 +1,22 @@
+source: assets/board_top.png  # Das Bild, das KiBot erzeugt hat
+title: "Mein DCC Decoder Rev 1.0"
+description: "RP2040 basierter Lokdecoder"
+
+pins:
+  - pin: 1
+    coords: [100, 200]  # x, y Koordinaten im Bild (manuell ermitteln!)
+    name: "TRACK L"
+    type: power
+    description: "DCC Gleis Links"
+  
+  - pin: 2
+    coords: [100, 250]
+    name: "TRACK R"
+    type: power
+    description: "DCC Gleis Rechts"
+
+  - pin: 3
+    coords: [300, 150]
+    name: "PWM 1"
+    type: pwm
+    description: "Motor Forward (GPIO 12)"
