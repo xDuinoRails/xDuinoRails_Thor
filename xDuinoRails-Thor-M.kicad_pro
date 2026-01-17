@@ -58,13 +58,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        "copper_edge_clearance|169154000|109087000|5201b433-d5cf-482d-b1aa-ef65445c430a|2adafd73-7398-4acc-8612-76708fb43bec",
-        "copper_edge_clearance|172642500|92039500|57e6a7cb-baf0-4eab-b050-a138f69daa10|f857bd81-8ce7-4894-b259-6c4e5e572492",
-        "copper_edge_clearance|172754000|105797000|57e6a7cb-baf0-4eab-b050-a138f69daa10|f9d7cbb9-c1a9-4819-a1e3-aa2e2325bd7b",
-        "copper_edge_clearance|172754000|107067000|57e6a7cb-baf0-4eab-b050-a138f69daa10|f22bc54d-19cc-4d96-9595-3e2cb915a8c6",
-        "courtyards_overlap|169216622|89556999|f0b56209-46fd-4525-8b93-1af32cd78b52|f3871502-d774-491b-b7b5-101623b232a3"
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
