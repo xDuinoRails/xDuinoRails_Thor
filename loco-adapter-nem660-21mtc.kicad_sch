@@ -1737,7 +1737,7 @@
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "6dab23ea-d8b7-4526-8651-efc2326ecf0e")
-		(property "Reference" "J?"
+		(property "Reference" "J1201"
 			(at 59.69 72.39 0)
 			(effects
 				(font
@@ -1849,7 +1849,7 @@
 		(instances
 			(project "xDuinoRails-Thor-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/3c699e35-5808-46af-b922-4c3eb1f6da5c/e97feae1-09c7-4701-94c7-8bf13d7a2208"
-					(reference "J?")
+					(reference "J1201")
 					(unit 1)
 				)
 			)
@@ -1865,7 +1865,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ec867ee4-9511-4229-8d3d-735601bb7726")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR1201"
 			(at 96.52 95.25 0)
 			(effects
 				(font
@@ -1915,7 +1915,7 @@
 		(instances
 			(project "xDuinoRails-Thor-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/3c699e35-5808-46af-b922-4c3eb1f6da5c/e97feae1-09c7-4701-94c7-8bf13d7a2208"
-					(reference "#PWR?")
+					(reference "#PWR1201")
 					(unit 1)
 				)
 			)

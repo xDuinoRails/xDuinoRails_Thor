@@ -453,7 +453,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "333057ae-4333-44b1-9967-9da47615b56c")
-		(property "Reference" "#PWR701"
+		(property "Reference" "#PWR702"
 			(at 130.81 176.53 0)
 			(effects
 				(font
@@ -503,7 +503,7 @@
 		(instances
 			(project "xDuinoRails-Thor-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/3c699e35-5808-46af-b922-4c3eb1f6da5c"
-					(reference "#PWR701")
+					(reference "#PWR702")
 					(unit 1)
 				)
 			)
@@ -519,7 +519,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a82e59a6-05d7-4495-b117-95a23d620cf8")
-		(property "Reference" "#PWR801"
+		(property "Reference" "#PWR701"
 			(at 129.54 109.22 0)
 			(effects
 				(font
@@ -569,7 +569,7 @@
 		(instances
 			(project "xDuinoRails-Thor-M"
 				(path "/fb33ec4e-6596-45d2-a121-8d3475acd69a/3c699e35-5808-46af-b922-4c3eb1f6da5c"
-					(reference "#PWR801")
+					(reference "#PWR701")
 					(unit 1)
 				)
 			)
