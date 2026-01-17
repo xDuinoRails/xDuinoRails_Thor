@@ -115,6 +115,10 @@
 		(uuid "15fb0a47-563f-4dc3-bd6e-194844c90c5e")
 	)
 	(no_connect
+		(at 91.44 148.59)
+		(uuid "068417ce-298f-4708-9459-e568eab7663a")
+	)
+	(no_connect
 		(at 91.44 143.51)
 		(uuid "188058de-e950-4cb8-a96e-939fdce71f3c")
 	)
@@ -170,15 +174,35 @@
 		)
 		(uuid "27df3343-810a-4782-8681-84503a6d198f")
 	)
-	(wire
+	(bus
 		(pts
-			(xy 156.21 135.89) (xy 144.78 135.89)
+			(xy 144.78 133.35) (xy 156.21 133.35)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "59a54421-b2cb-444b-a291-2b7e007a0bc8")
+		(uuid "2919871a-efbb-4765-8ffc-605a10e28202")
+	)
+	(bus
+		(pts
+			(xy 143.51 66.04) (xy 154.94 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e73ac87-3f72-418a-8eec-6d80ad4bf799")
+	)
+	(bus
+		(pts
+			(xy 143.51 76.2) (xy 154.94 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52e81990-ced1-4d5c-bf1f-c743019b898c")
 	)
 	(wire
 		(pts
@@ -200,15 +224,15 @@
 		)
 		(uuid "8bd28d3a-83cf-404c-89e0-e8783888f06c")
 	)
-	(wire
+	(bus
 		(pts
-			(xy 154.94 66.04) (xy 143.51 66.04)
+			(xy 144.78 135.89) (xy 156.21 135.89)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a19478bd-77b9-43ae-a77a-d3bbb8e9a6ef")
+		(uuid "a12f2cf1-d4f1-4cb7-9d6b-83bd9ec4fe52")
 	)
 	(wire
 		(pts
@@ -232,23 +256,13 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 143.51) (xy 144.78 143.51)
+			(xy 121.92 115.57) (xy 121.92 125.73)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b025ce85-c9f2-4307-bfe5-5ac94480b3c9")
-	)
-	(wire
-		(pts
-			(xy 154.94 68.58) (xy 143.51 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b9010e8a-0d4f-423a-984d-cde1d2e0ef9d")
+		(uuid "b2fdbbc2-7a37-4b25-9a81-36433af73860")
 	)
 	(wire
 		(pts
@@ -260,15 +274,15 @@
 		)
 		(uuid "bc813a70-37ea-44b8-b305-8fa5f6ee5750")
 	)
-	(wire
+	(bus
 		(pts
-			(xy 154.94 76.2) (xy 143.51 76.2)
+			(xy 143.51 68.58) (xy 154.94 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d22a8156-01a3-4b38-80b7-03f12c072879")
+		(uuid "c2230f55-e48a-455b-a6dd-9860a335d5d5")
 	)
 	(wire
 		(pts
@@ -280,15 +294,15 @@
 		)
 		(uuid "da25bcfc-a697-4c83-8602-0c4f63d92ba3")
 	)
-	(wire
+	(bus
 		(pts
-			(xy 156.21 133.35) (xy 144.78 133.35)
+			(xy 144.78 143.51) (xy 156.21 143.51)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f7a170ca-df34-40f7-bbb6-809538efcf2c")
+		(uuid "f891c6f4-b838-4928-9284-1aabad28cf69")
 	)
 	(text "Bus interfaces"
 		(exclude_from_sim no)
@@ -300,6 +314,17 @@
 		)
 		(uuid "f3ffc6fd-aff6-4754-ac9e-9f38d6981046")
 	)
+	(hierarchical_label "U+"
+		(shape input)
+		(at 121.92 115.57 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0a4e53c5-9d9e-4484-87d5-217bfa61c937")
+	)
 	(hierarchical_label "AMP_MOTOR[0..1]"
 		(shape input)
 		(at 154.94 66.04 0)
@@ -310,17 +335,6 @@
 			(justify left)
 		)
 		(uuid "1e45e72d-20f4-4310-8b4a-f21c87adb671")
-	)
-	(hierarchical_label "SPEAKER[0..1]"
-		(shape input)
-		(at 48.26 35.56 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "2977ba99-4176-4e58-8dd5-5ca40e9fbef9")
 	)
 	(hierarchical_label "AMP_FUNC[0..1]"
 		(shape input)
@@ -343,17 +357,6 @@
 			(justify left)
 		)
 		(uuid "56a0f267-4ff7-4f1e-b242-c91b7de64664")
-	)
-	(hierarchical_label "AMP_AUX[1..7]"
-		(shape input)
-		(at 48.26 43.18 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "82ae505a-840f-4dc6-a292-18423816c1d1")
 	)
 	(hierarchical_label "GND"
 		(shape input)
@@ -420,17 +423,6 @@
 			(justify left)
 		)
 		(uuid "eecffd76-eeb1-4c18-baea-4b1388233b67")
-	)
-	(hierarchical_label "AUX[1..8]"
-		(shape input)
-		(at 48.26 39.37 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "f2fc40fa-1038-4ee8-a519-897c230ff88d")
 	)
 	(hierarchical_label "+3V3"
 		(shape input)
@@ -604,16 +596,6 @@
 				)
 				(justify left top)
 			)
-		)
-		(pin "+3V3" input
-			(at 116.84 125.73 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "d071b62a-e531-4bc5-bcaf-27c60a34a6e5")
 		)
 		(pin "U+" input
 			(at 121.92 125.73 90)
