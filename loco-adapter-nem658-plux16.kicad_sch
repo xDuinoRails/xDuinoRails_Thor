@@ -1244,6 +1244,15 @@
 				(hide yes)
 			)
 		)
+		(property "OLI_ID" "Plux16_02x08_1.27"
+			(at 58.42 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "15"
 			(uuid "c35d069c-ac0a-4a40-8317-d742cc85ea19")
 		)

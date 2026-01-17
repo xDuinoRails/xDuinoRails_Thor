@@ -9372,6 +9372,19 @@
 				)
 			)
 		)
+		(property "OLI_ID" "Plux16_02x08_1.27"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "81a6beb0-177a-44a9-abfe-5e985a06e941")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_2x??_*")
 		(path "/3c699e35-5808-46af-b922-4c3eb1f6da5c/072872c0-59aa-4b8b-8887-ebeae887efaf/b4826ddb-07cc-4e87-b4b2-3467e1a00559")
 		(sheetname "loco-adapter-nem658-plux16")
@@ -15201,7 +15214,7 @@
 			(justify left bottom mirror)
 		)
 	)
-	(gr_text "Thor Medium"
+	(gr_text "xDRails Thor"
 		(at 155.170857 104.521 0)
 		(layer "B.SilkS")
 		(uuid "27b1008b-8259-401f-9b78-68907afedc2c")
