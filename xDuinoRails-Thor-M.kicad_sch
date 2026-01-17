@@ -442,28 +442,8 @@
 		(uuid "a00dc6e8-2705-4d00-9659-51364b6bddb1")
 	)
 	(no_connect
-		(at 261.62 102.87)
-		(uuid "5e24bd05-dbba-473f-9873-856a941260fb")
-	)
-	(no_connect
-		(at 226.06 115.57)
-		(uuid "685b85f4-abd9-42ba-8bc6-79245acddb1c")
-	)
-	(no_connect
-		(at 261.62 107.95)
-		(uuid "9de9bee6-af86-4bb8-89e1-4e6e2052962c")
-	)
-	(no_connect
 		(at 129.54 115.57)
 		(uuid "9e6b625f-7364-4272-8f9a-e62ca058572e")
-	)
-	(no_connect
-		(at 261.62 100.33)
-		(uuid "a228adad-8f1c-476b-88ca-c5d87fcb90a0")
-	)
-	(no_connect
-		(at 226.06 111.76)
-		(uuid "d3516326-d189-495c-b48f-d5954edf9fd7")
 	)
 	(bus_entry
 		(at 152.4 133.35)
@@ -2319,7 +2299,7 @@
 			(color 255 253 198 1.0000)
 		)
 		(uuid "3c699e35-5808-46af-b922-4c3eb1f6da5c")
-		(property "Sheetname" "loco-adapter-nem660-21mtc"
+		(property "Sheetname" "loco-adapters-2func"
 			(at 226.06 93.2684 0)
 			(effects
 				(font
@@ -2328,7 +2308,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "loco-adapter-nem660-21mtc.kicad_sch"
+		(property "Sheetfile" "loco-adapters-2func.kicad_sch"
 			(at 226.06 123.7746 0)
 			(effects
 				(font
@@ -2346,26 +2326,6 @@
 				(justify left)
 			)
 			(uuid "325a0c80-57c2-4b4b-992d-7c136e66bfa4")
-		)
-		(pin "AUX89_ZBCLK" input
-			(at 261.62 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "b2510e8a-5eea-447b-993f-ec7d71489a27")
-		)
-		(pin "AUX910_ZBDATA" input
-			(at 261.62 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "fd366ab7-06bd-4884-a409-6409e2a350f5")
 		)
 		(pin "+3V3" input
 			(at 242.57 93.98 90)
@@ -2387,16 +2347,6 @@
 			)
 			(uuid "5463bf2c-3608-4c59-ad1c-a8ecb303ef3e")
 		)
-		(pin "SPEAKER[0..1]" input
-			(at 226.06 115.57 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "843baa61-2332-43a5-aedb-3e62c80cc773")
-		)
 		(pin "AMP_FUNC[0..1]" input
 			(at 226.06 107.95 180)
 			(effects
@@ -2406,16 +2356,6 @@
 				(justify left)
 			)
 			(uuid "c77d6e65-df0c-4359-bb74-a550e6413526")
-		)
-		(pin "AMP_AUX[1..7]" input
-			(at 226.06 111.76 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "eb2ab63a-6ba9-495f-9740-05159346b580")
 		)
 		(pin "AMP_MOTOR[0..1]" input
 			(at 226.06 104.14 180)
@@ -2436,16 +2376,6 @@
 				(justify right)
 			)
 			(uuid "c0ef8798-ce8f-41eb-9681-37a52d8dc657")
-		)
-		(pin "AUX[1..8]" input
-			(at 261.62 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "f3d5496e-7041-40a7-bb15-0f443db9a11b")
 		)
 		(instances
 			(project "xDuinoRails-Thor-M"

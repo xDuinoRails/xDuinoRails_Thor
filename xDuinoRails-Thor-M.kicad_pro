@@ -779,7 +779,7 @@
     ],
     [
       "3c699e35-5808-46af-b922-4c3eb1f6da5c",
-      "loco-adapter-nem660-21mtc"
+      "loco-adapters-2func"
     ],
     [
       "28e0fa6a-354f-41d6-8b58-d1dd784eb1fe",
@@ -792,6 +792,14 @@
     [
       "0bf87bfc-1a64-4ae3-9476-ab62edd28dcb",
       "rails_power-buffer"
+    ],
+    [
+      "072872c0-59aa-4b8b-8887-ebeae887efaf",
+      "loco-adapter-nem658-plux16"
+    ],
+    [
+      "e97feae1-09c7-4701-94c7-8bf13d7a2208",
+      "loco-adapter-nem660-21mtc"
     ],
     [
       "fb33ec4e-6596-45d2-a121-8d3475acd69a",
