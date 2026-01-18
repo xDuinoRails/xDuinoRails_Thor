@@ -1,4 +1,4 @@
-# mtc21 Semi-Decoder for Seeed XIAO boards
+# mtc21/plux16 Semi-Decoder for Seeed XIAO boards
 
 Make a Seeed XIAO board a mtc21 decoder, all the electronics needed is on this little board:
 - mtc21 connector (but not the size)
