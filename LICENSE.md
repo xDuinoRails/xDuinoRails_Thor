@@ -17,7 +17,7 @@ A commercial license also grants eligibility for our **Seal of Approval** progra
 * **Certified Compliance:** Access to official test suites and the right to use our trademark.
 * **Support:** Direct engineering support for KiCad integration and firmware optimization.
 
-For commercial inquiries, please contact: [YOUR EMAIL/CONTACT LINK]
+For commercial inquiries, please contact: olivier.chatelain(at)gmail.com
 
 ---
 
