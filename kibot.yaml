@@ -112,6 +112,7 @@ outputs:
     type: render_3d
     dir: 'images'
     options:
+      pre_transform: hide_refs
       width: 1024
       height: 768
       view: top      
@@ -123,6 +124,7 @@ outputs:
     type: render_3d
     dir: 'images'
     options:
+      pre_transform: hide_refs
       width: 1024
       height: 768
       view: bottom
@@ -142,7 +144,6 @@ outputs:
     comment: 'Erzeugt Excellon-Bohrdateien'
     type: excellon
     dir: 'grbr'
-
 
   - name: 'Stueckliste_BOM'
     comment: 'Erzeugt eine Stückliste im CSV-Format'
@@ -165,7 +166,6 @@ outputs:
     comment: 'Positionsdateien für die Bestückung (Pick & Place)'
     type: position
     dir: 'CAM'
-    variant: 'production_variant'
     options:
       format: 'CSV'
       units: 'millimeters'
