@@ -149,14 +149,14 @@ outputs:
       format: CSV
       ref_separator: ';'
       columns:
+        - field: 'OLI_ID'
+          name: 'Olis ID #'
         - field: 'Reference'
           name: 'Designator'
         - field: 'Value'
           name: 'Value'
         - field: 'Footprint'
           name: 'Package'
-        - field: 'OLI_ID'
-          name: 'Olis ID #'
 
   - name: 'position_files'
     comment: 'Positionsdateien für die Bestückung (Pick & Place)'
@@ -167,7 +167,7 @@ outputs:
       units: 'millimeters'
       separate_files_for_front_and_back: true
       columns:
-        - id: Ref
+        - id: Reference
           name: Designator
         - id: PosX
           name: "Mid X"
