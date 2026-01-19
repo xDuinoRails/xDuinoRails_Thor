@@ -9,16 +9,16 @@ filters:
     regex: '.*'
     replace: ' '
 
-  - name: 'production_variant'
-    comment: 'Ungefilterte Daten für die Fertigung'
-    type: kibom
-
 variants:
   - name: 'clean_render_variant'
     comment: 'Variante ohne sichtbare Referenzen'
     type: kibom
     pre_transform:
       - 'hide_refs'
+
+  - name: 'production_variant'
+    comment: 'Ungefilterte Daten für die Fertigung'
+    type: kibom
 
 preflight:
   erc:
@@ -111,6 +111,7 @@ outputs:
     comment: "Render der Oberseite (KiCad Internal)"
     # Doku bestätigt: 'render_3d' ist der korrekte Typ
     type: render_3d
+    variant: 'clean_render_variant'
     dir: 'images'
     options:
       width: 1024
@@ -122,6 +123,7 @@ outputs:
   - name: '3D_Bottom_View'
     comment: "Render der Unterseite (KiCad Internal)"
     type: render_3d
+    variant: 'clean_render_variant'
     dir: 'images'
     options:
       width: 1024
