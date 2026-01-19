@@ -167,7 +167,7 @@ outputs:
       units: 'millimeters'
       separate_files_for_front_and_back: true
       columns:
-        - id: Reference
+        - id: Ref
           name: Designator
         - id: PosX
           name: "Mid X"
