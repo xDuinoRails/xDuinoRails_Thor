@@ -147,6 +147,7 @@ outputs:
     dir: 'CAM'
     options:
       format: CSV
+      ref_separator: ';'
       columns:
         - field: 'Reference'
           name: 'Designator'
