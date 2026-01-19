@@ -9,6 +9,10 @@ filters:
     regex: '.*'
     replace: ' '
 
+  - name: 'production_variant'
+    comment: 'Ungefilterte Daten für die Fertigung'
+    type: kibom
+
 variants:
   - name: 'clean_render_variant'
     comment: 'Variante ohne sichtbare Referenzen'
@@ -162,6 +166,7 @@ outputs:
     comment: 'Positionsdateien für die Bestückung (Pick & Place)'
     type: position
     dir: 'CAM'
+    variant: 'production_variant'
     options:
       format: 'CSV'
       units: 'millimeters'
