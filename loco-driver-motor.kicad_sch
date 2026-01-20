@@ -2619,7 +2619,7 @@
 				(hide yes)
 			)
 		)
-		(property "OLI_ID" "100nF_0603"
+		(property "OLI_ID" "100nF_0805"
 			(at 90.17 54.61 0)
 			(effects
 				(font
