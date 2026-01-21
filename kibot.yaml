@@ -64,49 +64,6 @@ outputs:
         - layers: [ 'Edge.Cuts' ]
         - layers: [ 'F.Fab' ]
 
-  - name: 'PDF_PCB_auessere_Kupfer_Lagen'
-    comment: "Äussere PCB Kupfer Lagen"
-    type: pcb_print
-    options:
-      format: PDF
-      output: '%f-PCB_FB_Cu_Layers.pdf'
-      plot_sheet_reference: true
-      pages:
-        - layers: [ 'F.Cu', 'B.Cu' ]
-
-  - name: 'PDF_PCB_auessere_Kupfer_Lagen_gross'
-    comment: "Äussere PCB Kupfer Lagen"
-    type: pcb_print
-    options:
-      format: PDF
-      output: '%f-PCB_FB_Cu_Layers_Big.pdf'
-      scaling: 0
-      plot_sheet_reference: true
-      pages:
-        - layers: [ 'F.Cu', 'B.Cu' ]
-
-  - name: 'highlight_u_plus'
-    comment: 'Hervorhebung des Netzes U+ auf Seitengröße'
-    type: pcbdraw
-    options:
-      format: png
-      # PcbDraw nutzt 'highlight' (Liste von Netzen), um diese farblich zu markieren
-      highlight: ['U+']
-      # Zeige keine Komponenten, um den Fokus auf die Leiterbahnen zu legen (optional anpassbar)
-      show_components: none
-      # Stellt sicher, dass das Board auf der Seite zentriert/sichtbar ist
-      # Hinweis: PcbDraw exportiert oft in Board-Größe. Für A4-Scaling müsste man ggf. SVG nutzen und konvertieren.
-      output: '%f-U_Plus.%x'
-
-  - name: 'highlight_gnd'
-    comment: 'Hervorhebung des Netzes GND auf Seitengröße'
-    type: pcbdraw
-    options:
-      format: png
-      highlight: ['GND']
-      show_components: none
-      output: '%f-GND.%x'
-
   - name: '3D_Top_View'
     comment: "Render der Oberseite (KiCad Internal)"
     type: render_3d
@@ -131,92 +88,12 @@ outputs:
       # ray_tracing: true
       output: '%f-3D_Bottom.png'
 
-  - name: 'Gerber_Dateien'
-    comment: 'Erzeugt Gerber-Daten für die Fertigung'
-    type: gerber
-    dir: 'grbr'
-    options:
-      use_protel_extensions: true
-      plot_footprint_refs: false
-      plot_footprint_values: false      
-
-  - name: 'Bohr_Dateien'
-    comment: 'Erzeugt Excellon-Bohrdateien'
-    type: excellon
-    dir: 'grbr'
-
-  - name: 'Stueckliste_BOM'
-    comment: 'Erzeugt eine Stückliste im CSV-Format'
-    type: bom
-    dir: 'CAM'
-    options:
-      format: CSV
-      ref_separator: ';'
-      columns:
-        - field: 'OLI_ID'
-          name: 'Olis ID #'
-        - field: 'Reference'
-          name: 'Designator'
-        - field: 'Value'
-          name: 'Value'
-        - field: 'Footprint'
-          name: 'Package'
-
-  - name: 'position_files'
-    comment: 'Positionsdateien für die Bestückung (Pick & Place)'
-    type: position
-    dir: 'CAM'
-    options:
-      format: 'CSV'
-      units: 'millimeters'
-      separate_files_for_front_and_back: true
-      columns:
-        - id: Ref
-          name: Designator
-        - id: PosX
-          name: "Mid X"
-        - id: PosY
-          name: "Mid Y"
-        - id: Side
-          name: Layer
-        - id: Rot
-          name: Rotation
-
-  - name: 'Spice_Netlist'
-    comment: 'Export ngspice netlist'
-    type: netlist
-    dir: 'Spice'
-    options:
-      format: 'spice'
-
-  - name: 'Fertigungsdaten_ZIP'
-    comment: 'Erzeugt ein ZIP-Archiv mit allen Fertigungsdaten'
-    type: compress
-    dir: 'CAM'
-    options:
-      format: ZIP
-      files:
-        - from_output: 'Gerber_Dateien'
-          dest: '/'
-        - from_output: 'Bohr_Dateien'
-          dest: '/'
-
-  - name: 'Pinion_Image'
-    comment: 'Generate a picture of the board for Pinion'
-    type: pcbdraw
-    dir: 'assets'
-    options:
-      format: png
-      output: board_top.png
-      style: oshpark-purple
-
   - name: 'Interactive_BOM'
     comment: 'Erzeugt eine interaktive HTML-Stückliste (iBOM)'
     type: ibom
     options:
       dark_mode: true
       sort_order: 'C,R,L,D,U,J,T'
-      # ÄNDERUNG: Werte als kommagetrennter String, nicht als Liste
       show_fields: 'Value,Footprint'
       group_fields: 'Value,Footprint'
       output: '%f-iBOM.html'
