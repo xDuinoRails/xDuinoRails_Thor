@@ -1,7 +1,7 @@
 # mtc21/plux16 Semi-Decoder for Seeed XIAO boards
 
 Make a Seeed XIAO board a mtc21 decoder, all the electronics needed is on this little board:
-- mtc21 connector (but not the size)
+- mtc21/plux16 compatible connector
 - DC Motor
 - 2x Functions
 - DCC / DCC-ACK / RailCom
