@@ -62,18 +62,10 @@ jobs:
           config: kibot.yaml
           schema: ${{ matrix.project }}.kicad_sch
           board: ${{ matrix.project }}.kicad_pcb
-          # KiBot will put output files into this folder:
           dir: assets/${{ matrix.project }}
-          pre_launch_script: |
-            # Install pinion dependencies
-            apt-get update
-            apt-get install -y libjpeg-dev zlib1g-dev
-            # Install pinion
-            pip3 install pinion
-          post_launch_script: |
-            # Run pinion if config exists
-            if [ "${{ steps.find_pinion_config.outputs.found }}" = "true" ]; then
-              pinion render \
-                --config ${{ matrix.project }}.pinion.yaml \
-                --output assets/${{ matrix.project }}/pinout.svg
-            fi
+
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: artifacts-${{ matrix.project }}
+          path: assets/${{ matrix.project }}
