@@ -70,8 +70,8 @@ outputs:
     dir: 'images'
     options:
       pre_transform: hide_refs
-      width: 1024
-      height: 768
+      width: 2048
+      height: 1536
       view: top      
       variant: 'clean_render_variant'
       output: '%f-3D_Top.png'
@@ -82,8 +82,8 @@ outputs:
     dir: 'images'
     options:
       pre_transform: hide_refs
-      width: 1024
-      height: 768
+      width: 2048
+      height: 1536
       view: bottom
       # ray_tracing: true
       output: '%f-3D_Bottom.png'
